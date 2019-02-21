@@ -1,7 +1,6 @@
-# helloworld
+# DataScience
 
-
-2019-02-21 week1
+2019-02-21 Week1
 
 1. github signup
 2. upload flow (228 vacation homework)
