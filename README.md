@@ -6,3 +6,12 @@
 >2. 
 >3. upload flow (228 vacation homework)
 >[drow.io](http://www.drow.io)
+
+**2019-02-28 Week2**
+>1.__HW0:Reading sample code and do some revise__
+
+**2019-03-07 Week3**
+
+**2019-03-14 Week4**
+
+**2019-03-21 Week5**
