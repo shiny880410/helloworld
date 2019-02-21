@@ -2,6 +2,7 @@
 
 2019-02-21 Week1
 
-1. github signup
-2. upload flow (228 vacation homework)
-[drow.io](http://www.drow.io)
+	1. Github signup (including download desktop version and editing README)
+	2. 
+	3. upload flow (228 vacation homework)
+	   [drow.io](http://www.drow.io)
