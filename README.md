@@ -7,9 +7,10 @@
 
 **2019-02-28 Week2**
 >1. Upload mind map of the sample code 
-[drow.io](http://www.drow.io)
+![image](https://github.com/shiny880410/helloworld/blob/master/hw0/sample_mindmap.PNG)
 >2. HW0 : jieba and wordcloud 
 [__hw0__](https://github.com/shiny880410/helloworld/blob/master/hw0/jieba/jiebatest6cloud.py)
+![image](https://github.com/shiny880410/helloworld/blob/master/hw0/test.PNG)
 
 **2019-03-07 Week3**
 
