@@ -7,7 +7,8 @@
 >[drow.io](http://www.drow.io)
 
 **2019-02-28 Week2**
->1. HW0 : Reading sample code and do some revise
+>1.Upload mind map of the sample code [drow.io](http://www.drow.io)
+>2.HW0 : Reading sample code and do some revise [hw0]()
 
 **2019-03-07 Week3**
 
