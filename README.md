@@ -12,11 +12,11 @@
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw0/sample_mindmap.PNG)
 ### 2. HW0 : Use modules and googlespread to make a wordcloud
 * Web crawler(BeautufulSoup/requests) [crawler](https://github.com/shiny880410/helloworld/blob/master/hw0/20190301/craw.py)
-* Save and search the news with keywords(gspread) [googleSpreadSheet](https://docs.google.com/spreadsheets/d/1I-m9HwjiPkYES3Ll5PvWk-xijm_9bcn_jxnDOhtpnZE/edit#gid=1749380368)
+* Save and search the news with keywords(gspread) [googleSpreadSheet](https://docs.google.com/spreadsheets/d/1I-m9HwjiPkYES3Ll5PvWk-xijm_9bcn_jxnDOhtpnZE/edit?usp=sharing)
 * Cut the news and make the wordcloud(jieba/wordcloud) [hw0](https://github.com/shiny880410/helloworld/blob/master/hw0/20190301/20190301.py)
 	* February 28 incident
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw0/20190301/2288WC.png)
-	* '줄�@'
+	* 줄�@
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw0/20190301/hwanuanWC.png)
 
 ## **2019-03-07 Week3**
