@@ -3,7 +3,8 @@
 ## **2019-02-21 Week1**
 
 ### 1. Github signup 
-(including download desktop version and editing README)
+* Download desktop version 
+* Editing README
 
 
 ## **2019-02-28 Week2**
@@ -15,7 +16,7 @@
 * Cut the news and make the wordcloud(jieba/wordcloud) [hw0](https://github.com/shiny880410/helloworld/blob/master/hw0/20190301/20190301.py)
 	* February 28 incident
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw0/20190301/2288WC.png)
-	* 줄�@
+	* '줄�@'
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw0/20190301/hwanuanWC.png)
 
 ## **2019-03-07 Week3**
