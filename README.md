@@ -20,6 +20,7 @@
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw0/20190301/hwanuanWC.png)
 
 ## **2019-03-07 Week3**
+## **2019-03-14 Week4**
 ### HW1 : Exploratory Data Analysis (EDA) practice : Speed on the Roads
 * Collecting data from Taipei city government website (gspread) [crawler](https://docs.google.com/spreadsheets/d/1FJPf9S2vpimDZvefrpnfq31cq3JpmySHse74WQoEgu4/edit?usp=sharing)
 	* Update every five minutes
@@ -31,6 +32,6 @@
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw1/linegraph.png)
 * Draw the heatmap of car speed of 復興路 during a day (matplotlib) [Heatmap](https://github.com/shiny880410/helloworld/blob/master/hw1/heatmap.py)
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw1/heatmap.png)
-## **2019-03-14 Week4**
+
 
 ## **2019-03-21 Week5**
