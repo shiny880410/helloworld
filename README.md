@@ -20,13 +20,16 @@
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw0/20190301/hwanuanWC.png)
 
 ## **2019-03-07 Week3**
-## **2019-03-14 Week4**
-### HW1 : Exploratory Data Analysis (EDA) practice : Speed on the Roads
-* Collecting data from Taipei city government website (gspread) [crawler](https://docs.google.com/spreadsheets/d/1FJPf9S2vpimDZvefrpnfq31cq3JpmySHse74WQoEgu4/edit?usp=sharing)
-	* Update every five minutes
+### HW1 : Collecting data from the website and changing them to Tidy Data (gspread) [crawler](https://docs.google.com/spreadsheets/d/1FJPf9S2vpimDZvefrpnfq31cq3JpmySHse74WQoEgu4/edit?usp=sharing)
+	*  The data is from Taipei city government website (Update every five minutes)
 	* 7 observation spot on 復興路
 	* Average car speed in weekdays
-* Draw the line graph of car speed on each spot during a day (matplotlib) [Line Graph](https://github.com/shiny880410/helloworld/blob/master/hw1/linegraph.py)
+	* To know the relation between car speed and time, we do the data tidying to make variables forms a column, and the observation in the same timeforms a row.
+	* To eliminate the meaningless fluctuations, we average the speed every 15 minutes.
+## **2019-03-14 Week4**
+### HW2&3 : Exploratory Data Analysis (EDA) : Speed on the Roads
+	* Q1 : 
+	* Draw the line graph of car speed on each spot during a day (matplotlib) [Line Graph](https://github.com/shiny880410/helloworld/blob/master/hw1/linegraph.py)
 	* To define peak time / off-peak time
 	*  
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw1/linegraph.png)
