@@ -21,12 +21,12 @@
 
 ## **2019-03-07 Week3**
 ### HW1 : Collecting data from the website and changing them to Tidy Data (gspread) [crawler](https://docs.google.com/spreadsheets/d/1FJPf9S2vpimDZvefrpnfq31cq3JpmySHse74WQoEgu4/edit?usp=sharing)
-	* The data is from Taipei city government website (Update every five minutes)
-	* 7 observation spot on 復興路
-	* Average car speed in weekdays
-	* To know the relation between car speed and time, we do the data tidying to make variables forms a column, 
-	   and the observation in the same timeforms a row.
-	* To eliminate the meaningless fluctuations, we average the speed every 15 minutes.
+* The data is from Taipei city government website (Update every five minutes)
+* 7 observation spot on 復興路
+* Average car speed in weekdays
+* To know the relation between car speed and time, we do the data tidying. 
+to make variables forms a column, and the observation in the same timeforms a row.
+* To eliminate the meaningless fluctuations, we average the speed every 15 minutes.
 ## **2019-03-14 Week4**
 ### HW2&3 : Exploratory Data Analysis (EDA) : Speed on the Roads
 	* Q1 : 
