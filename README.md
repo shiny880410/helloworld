@@ -34,8 +34,15 @@ to make variables forms a column, and the observation in the same timeforms a ro
 	* Define peak time / off-peak time with the greatest slope
 	*  
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw1/linegraph.png)
-* Draw the heatmap of car speed of 復興路 during a day (matplotlib) [Heatmap](https://github.com/shiny880410/helloworld/blob/master/hw1/heatmap.ipynb)
+* Q2 : Can we assume that the speed at each and every adjacent observation spot are the same?
+	* Draw the heatmap of car speed of 復興路 during a day (matplotlib) [Heatmap](https://github.com/shiny880410/helloworld/blob/master/hw1/heatmap.ipynb)
+	* Define peak time / off-peak time with the greatest slope
+	*  
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw1/heatmap.png)
+* Q3 : 
+	* Draw the line graph that varies with time during a day (matplotlib) [Line Graph](https://github.com/shiny880410/helloworld/blob/master/hw1/linegraph2.ipynb)
+	*
+
 
 
 ## **2019-03-21 Week5**
