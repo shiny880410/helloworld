@@ -24,17 +24,17 @@
 * The data is from Taipei city government website (Update every five minutes)
 * 7 observation spot on 復興路
 * Average car speed in weekdays
-* To know the relation between car speed and time, we do the data tidying. 
+* To know the relation between car speed and time, we do the data tidying 
 to make variables forms a column, and the observation in the same timeforms a row.
 * To eliminate the meaningless fluctuations, we average the speed every 15 minutes.
 ## **2019-03-14 Week4**
 ### HW2&3 : Exploratory Data Analysis (EDA) : Speed on the Roads
-	* Q1 : 
-	* Draw the line graph of car speed on each spot during a day (matplotlib) [Line Graph](https://github.com/shiny880410/helloworld/blob/master/hw1/linegraph.py)
-	* To define peak time / off-peak time
+* Q1 : Can we assume that the speed at each and every adjacent observation spot are the same?
+	* Draw the line graph of car speed on each spot during a day (matplotlib) [Line Graph](https://github.com/shiny880410/helloworld/blob/master/hw1/linegraph.ipynb)
+	* Define peak time / off-peak time with the greatest slope
 	*  
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw1/linegraph.png)
-* Draw the heatmap of car speed of 復興路 during a day (matplotlib) [Heatmap](https://github.com/shiny880410/helloworld/blob/master/hw1/heatmap.py)
+* Draw the heatmap of car speed of 復興路 during a day (matplotlib) [Heatmap](https://github.com/shiny880410/helloworld/blob/master/hw1/heatmap.ipynb)
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw1/heatmap.png)
 
 
