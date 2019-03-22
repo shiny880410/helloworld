@@ -40,7 +40,7 @@ to make variables forms a column, and the observation in the same timeforms a ro
 	*  
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw1/heatmap.png)
 * Q3 : 
-	* Draw the line graph that varies with time during a day (matplotlib) [Line Graph](https://github.com/shiny880410/helloworld/blob/master/hw1/linegraph2.ipynb)
+	* Draw the line graph that varies with time during a day (matplotlib) [Line Graph2](https://github.com/shiny880410/helloworld/blob/master/hw1/linegraph2.ipynb)
 	*
 
 
