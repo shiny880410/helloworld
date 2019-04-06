@@ -45,6 +45,7 @@ to make variables forms a column, and the observation in the same timeforms a ro
 * Q4 : How to define rush hour of a day?
 	* Define peak time / off-peak time with the greatest slope : Paired samples t-test
 	* The rad spots indicated that p value<= 0.045
+	* The numbers in the graph is the weighted average ( w.r.t. the distance of VDs ) of the speed in different spots, which represents the road speed
 ![image](3)
 	* Define peak time / off-peak time with outliers : One sample t-test
 	* Result : no specific congestion in traffic ( p value >= 0.05 )
