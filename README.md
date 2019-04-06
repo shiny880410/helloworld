@@ -39,8 +39,8 @@ to make variables forms a column, and the observation in the same timeforms a ro
 * Q3 : The relation between adjacent observation spots
 	* We found that the speed curve of some adjacent observation spots  have the same trend
 	* We plot the v-t curve again with z-score to vanish the gap between spots 
-![image](1)
-![image](2)
+![image](https://github.com/shiny880410/helloworld/blob/master/hw1/復興北路479巷-民族東路(紅)、民族東路-民生東路(藍)s.png)
+![image](https://github.com/shiny880410/helloworld/blob/master/hw1/Z-score.png)
 ## **2019-03-21 Week5**
 * Q4 : How to define rush hour of a day?
 	* Define peak time / off-peak time with the greatest slope : Paired samples t-test
