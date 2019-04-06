@@ -36,6 +36,7 @@ to make variables forms a column, and the observation in the same timeforms a ro
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw1/linegraph.png)
 	* The difference in speed between spots are subtle but important
 	* Draw the line graph that varies with time during a day (matplotlib) [Line Graph2](https://github.com/shiny880410/helloworld/blob/master/hw1/復興南路2.ipynb)
+![image](https://github.com/shiny880410/helloworld/blob/master/hw1/%E5%BE%A9%E8%88%88%E5%BE%80%E5%8D%97.gif)
 * Q3 : The relation between adjacent observation spots
 	* We found that the speed curve of some adjacent observation spots  have the same trend
 	* We plot the v-t curve again with z-score to vanish the gap between spots 
