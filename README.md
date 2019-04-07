@@ -42,6 +42,7 @@ to make variables forms a column, and the observation in the same timeforms a ro
 	* We plot the v-t curve again with z-score to vanish the gap between spots 
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw1/%E5%BE%A9%E8%88%88%E5%8C%97%E8%B7%AF479%E5%B7%B7-%E6%B0%91%E6%97%8F%E6%9D%B1%E8%B7%AF(%E7%B4%85)%E3%80%81%E6%B0%91%E6%97%8F%E6%9D%B1%E8%B7%AF-%E6%B0%91%E7%94%9F%E6%9D%B1%E8%B7%AF(%E8%97%8D).png)
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw1/Z-score.png)
+	* Describe how two curves close to each other [Fréchet distance](https://github.com/shiny880410/helloworld/blob/master/hw1/Frechet.ipynb)
 ## **2019-03-21 Week5**
 * Q4 : How to define rush hour of a day?
 	* Define peak time / off-peak time with the greatest slope : Paired samples t-test
