@@ -45,12 +45,12 @@ to make variables forms a column, and the observation in the same timeforms a ro
 ## **2019-03-21 Week5**
 * Q4 : How to define rush hour of a day?
 	* Define peak time / off-peak time with the greatest slope : Paired samples t-test
-	* The rad spots indicated that p value<= 0.045
+	* The rad spots indicate that p value<= 0.045
 	* The numbers in the graph is the weighted average ( w.r.t. the distance of VDs ) of the speed in different spots, which represents the road speed [Average speed +T-test](https://github.com/shiny880410/helloworld/blob/master/hw1/%E6%A8%99%E8%A8%98%E9%A1%AF%E8%91%97%E9%80%9F%E5%BA%A6%E5%B7%AE%E7%95%B0.ipynb)
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw1/%E6%95%B4%E9%AB%94%E5%B9%B3%E5%9D%87.png)
 	* Define peak time / off-peak time with outliers : One sample t-test
 	* Result : no specific congestion in traffic ( p value >= 0.05 )
-* Q5 : To observe the feature of speed in rush hour of different spot
+* Q5 : To observe the feature of speed in rush hour of different spots
 	* 箱形圖
 * Q6 : Heat map of speed
 	* Draw the heatmap of car speed of 復興路 during a day (matplotlib) [Heatmap](https://github.com/shiny880410/helloworld/blob/master/hw1/heatmap.ipynb)
