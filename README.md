@@ -82,7 +82,6 @@ to make variables forms a column, and the observation in the same time forms a r
 將站點分成幾個小組別討論細部特徵。
 * Q2-4 : Divide spots into several types.
 	* 小結論 : 並利用前面的箱型圖，分組比較。
-
 ## **2019-03-28 Week6**
 * Q3-1 : We plan to conduct Reynolds Transport Theorem to see that whether the car speeds perform fluid properties.
 ## **2019-04-04 Week7**
