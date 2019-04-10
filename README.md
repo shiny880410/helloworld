@@ -39,19 +39,23 @@ to make variables forms a column, and the observation in the same time forms a r
 * Q1-1 : Using gif to make the results more clear. 
 	* Draw the line graph that varies with time during a day (matplotlib) [Line Graph2](https://github.com/shiny880410/helloworld/blob/master/hw1/復興南路2.ipynb)
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw1/%E5%BE%A9%E8%88%88%E5%BE%80%E5%8D%97.gif)
-	* 小結論 : 從動圖中我們可以發現，復興路的壅塞時段沒有如交控中心所訂定的如此明確而侷限。上午 7:00 至 9:00 速率沒有大幅降低，反而是連續降低的過程，且一路到下午，構成"日間時段"，而 17:00 至 19:00 的下班時間則有明顯壅塞，速率最後會於晚間回升。有了這些初步觀察，我們想知道是否能透過分析訂定出適合復興路的尖峰、離峰時段，讓交控更彈性更有效率。
+	* 小結論 : 從動圖中我們可以發現，有了這些初步觀察，我們想知道是否能透過分析訂定出適合復興路的尖峰、離峰時段，讓交控更彈性更有效率。
 * Q1-2 : How to define rush hour of 復興路 ?
-	* Method 1 : Define peak time / off-peak time with the greatest slope : Paired samples t-test
-	* Result : 
-	1. The red spots indicate that p value<= 0.045
-	2. The numbers in the graph is the weighted average ( w.r.t. the distance of VDs ) of the speed in different spots, which represents the road speed [Average speed +T-test](https://github.com/shiny880410/helloworld/blob/master/hw1/%E6%A8%99%E8%A8%98%E9%A1%AF%E8%91%97%E9%80%9F%E5%BA%A6%E5%B7%AE%E7%95%B0.ipynb)
-![image](https://github.com/shiny880410/helloworld/blob/master/hw1/%E6%95%B4%E9%AB%94%E5%B9%B3%E5%9D%87.png)
-	* Method 2 : Define peak time / off-peak time with outliers : One sample t-test
+	* Method 1 : Define peak time / off-peak time with outliers : One sample t-test (T.TEST)
 	* Reference : 
 	1. [高雄市區建國路段旅行時間差異性檢定與推估](https://research.kcg.gov.tw/upload/RelFile/Research/1069/635852659299120887.pdf)
 	2. [五福路車流特性分析與應用](https://www.tbkc.gov.tw/upload/WebList/141/3bb52ea3-d744-43ef-a84d-b7dc2dc6c117/AllFiles/105%E4%BA%94%E7%A6%8F%E8%B7%AF%E8%BB%8A%E6%B5%81%E7%89%B9%E6%80%A7%E5%88%86%E6%9E%90%E8%88%87%E6%87%89%E7%94%A8.pdf)
 	* Result : no specific congestion in traffic ( p value >= 0.05 )
-	* 小結論 : 在前兩分參考資料中，它們都是拿單一觀測站的資料，以一個小時為單位交錯後，做單一樣本T檢定來區隔尖峰離峰時段。但是當我們用同樣的方法分析之後卻發現，復興南北路似乎沒有明顯的壅塞情況。後來我們就想到，因為我們在同一條路上其實就有7個觀測站，如果把7個站的速度當作一組數據，經過10分鐘後的速度當另一組數據，這樣就可以對前後兩個時刻的速度做成對樣本T檢定，來判斷是否有顯著差異。我們直接用試算表內的T.TEST函式進行運算，只要P值小於0.05就視為顯著速度差異，並將這些時間點標註在整條路段平均速度與時間的折線圖上。(因為半夜的車速不太穩定，分析起來沒有太大意義，所以我們只分析5:00~23:00的數據)
+
+	* Method 2 : Define peak time / off-peak time with the greatest slope : Paired samples t-test (T.TEST)
+	* Result : 
+	1. The red spots indicate that p value<= 0.045
+	2. The numbers in the graph is the weighted average ( w.r.t. the distance of VDs ) of the speed in different spots, which represents the road speed [Average speed +T-test](https://github.com/shiny880410/helloworld/blob/master/hw1/%E6%A8%99%E8%A8%98%E9%A1%AF%E8%91%97%E9%80%9F%E5%BA%A6%E5%B7%AE%E7%95%B0.ipynb)
+![image](https://github.com/shiny880410/helloworld/blob/master/hw1/%E6%95%B4%E9%AB%94%E5%B9%B3%E5%9D%87.png)
+	* 小結論 : 復興路較無參考資料中車流壅塞時走走停停的狀況，因此在針對各個觀測站分別做單一樣本T檢定時，沒有顯著的情況發生。
+因此我們將車速對站點距離加權平均後，依照平均速率與下一個時間窗口的平均速率做成對樣本T檢定，用兩相鄰時窗速率改變量大小來衡量尖峰時間。
+並且由圖可知，復興路的壅塞時段沒有如交控中心所訂定的如此明確而侷限。上午 7:00 至 9:00 速率雖有大幅降低，但是其為一連續降低的過程，
+且一路到下午，構成"日間時段"，而 17:00 至 19:00 的下班時間則達到日均速率最低，壅塞明顯，但速率在晚間七點後有明顯回升。因此交控中心訂定的尖峰離峰時間有其代表性，但卻不能完全描述個別路段的速率變化。
 * Q1-3 : To observe the feature of speed in rush hours of different spots.
 	* 箱形圖
 * Q2 : Can we assume that the speed at each and every adjacent observation spot are the same?
