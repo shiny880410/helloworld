@@ -75,10 +75,8 @@ to make variables forms a column, and the observation in the same time forms a r
 	* The difference in speed between spots are subtle but important.
 	* The speed curve of some adjacent observation spots share the same trend.
 	* We plot the v-t curve again with z-score to vanish the gap between spots.
-![image](https://github.com/shiny880410/helloworld/blob/master/hw1/%E7%9B%B8%E9%84%B0%E7%AB%99%E9%80%9F%E7%8E%87.png)
-![image](https://github.com/shiny880410/helloworld/blob/master/hw1/%E7%9B%B8%E9%84%B0%E7%AB%99%E9%80%9F%E7%8E%87(4%2C5%E7%AB%99).png)
-![image](https://github.com/shiny880410/helloworld/blob/master/hw1/%E7%9B%B8%E9%84%B0%E7%AB%99%E9%80%9F%E7%8E%87zscore.png)
-![image](https://github.com/shiny880410/helloworld/blob/master/hw1/%E7%9B%B8%E9%84%B0%E7%AB%99%E9%80%9F%E7%8E%87zscore(4%2C5%E7%AB%99).png)
+![image](https://github.com/shiny880410/helloworld/blob/master/hw1/%E7%9B%B8%E9%84%B0%E7%AB%99%E9%80%9F%E7%8E%87.png)![image](https://github.com/shiny880410/helloworld/blob/master/hw1/%E7%9B%B8%E9%84%B0%E7%AB%99%E9%80%9F%E7%8E%87(4%2C5%E7%AB%99).png)  
+![image](https://github.com/shiny880410/helloworld/blob/master/hw1/%E7%9B%B8%E9%84%B0%E7%AB%99%E9%80%9F%E7%8E%87zscore.png)![image](https://github.com/shiny880410/helloworld/blob/master/hw1/%E7%9B%B8%E9%84%B0%E7%AB%99%E9%80%9F%E7%8E%87zscore(4%2C5%E7%AB%99).png)
 	* 小結論 : 兩相鄰站點之間有一定的速率變化趨勢，但是卻有一個速度差，因此我們透過取z分數來消除差距、觀察趨勢。但我們想更進一步量化兩條曲線的相似程度，
 因此想透過兩曲線間的距離來取得相似度。
 * Q2-3 : Determine the distance between two curves.
