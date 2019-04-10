@@ -48,7 +48,7 @@ to make variables forms a column, and the observation in the same time forms a r
 	* Result : no specific congestion in traffic ( p value >= 0.05 )
 	* __Method 2__ : Define peak time / off-peak time with the greatest slope : Paired samples t-test (T.TEST)
 	* Result : 
-	1. The red spots indicate that p value<= 0.045
+	1. The red dots indicate that p value<= 0.045
 	2. The numbers in the graph is the weighted average ( w.r.t. the distance of VDs ) of the speed in different spots, which represents the road speed [Average speed +T-test](https://github.com/shiny880410/helloworld/blob/master/hw1/%E6%A8%99%E8%A8%98%E9%A1%AF%E8%91%97%E9%80%9F%E5%BA%A6%E5%B7%AE%E7%95%B0.ipynb)
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw1/%E6%95%B4%E9%AB%94%E5%B9%B3%E5%9D%87.png)
 	* 小結論 : 復興路較無參考資料中車流壅塞時走走停停的狀況，因此在針對各個觀測站分別做單一樣本T檢定時，沒有顯著的情況發生。
@@ -58,10 +58,10 @@ to make variables forms a column, and the observation in the same time forms a r
 但卻不能完全描述個別路段的速率變化。透過此圖，我們可以進一步將不同站點的"日間時段"中特殊的速率值抓出來進行比較，同時也個別探討紅點標註的時刻為何有明顯速率變化。
 * Q1-4 : To observe the feature of speed in rush hours of different spots.
 	* Draw Box plot of different observation spots [Box plot](https://github.com/shiny880410/helloworld/blob/master/hw1/Box.ipynb)
-
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw1/boxplot.png)
-* Q1-5 : 紅點時間 詳細
-
+* Q1-5 : The reason behind red dots.
+	* 小結論 : 直觀來看，考量大多數公司上下班時間，以及根據經驗法則該時段搭乘捷運人數也會大幅增加，因此推論因為早上上班通勤時間壅塞，造成 7:00 至 7:30 速率連續明顯下降，17:00、19:00、21:00 亦有下班、
+下課通勤人數造成車速下降。之後將考慮輔以實際捷運人流、紅綠燈個數與秒數等，根據特定時刻運用分析方法驗證。
 ## **2019-03-21 Week5**
 * Q2-1 : Can we assume that the speed at each and every adjacent observation spots are the same?
 	* Draw the heatmap of car speed of 復興路 during a day (matplotlib) [Heatmap](https://github.com/shiny880410/helloworld/blob/master/hw1/heatmap.ipynb)
