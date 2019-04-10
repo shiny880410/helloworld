@@ -27,7 +27,7 @@
 * To know the relation between car speed and time, we do the data tidying 
 to make variables forms a column, and the observation in the same time forms a row
 * To eliminate the meaningless fluctuations, we average the speed every 10 minutes
-* Rush hours defined by Traffic Control Center are 7:00~9:00 and 17:00~19:00 
+* Rush hours defined by Traffic Control Center are 7:00 ~ 9:00 and 17:00 ~ 19:00 
 ## **2019-03-14 Week4**
 ### HW2&3 : Exploratory Data Analysis (EDA) : Speed on the Roads
 * Q1 : How does the speed varies with time?
@@ -39,7 +39,7 @@ to make variables forms a column, and the observation in the same time forms a r
 * Q2 : Using gif to make the results more clear. 
 	* Draw the line graph that varies with time during a day (matplotlib) [Line Graph2](https://github.com/shiny880410/helloworld/blob/master/hw1/復興南路2.ipynb)
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw1/%E5%BE%A9%E8%88%88%E5%BE%80%E5%8D%97.gif)
-	* 小結論 : 從動圖中我們可以發現，復興路的壅塞時段沒有如交控中心所訂定的如此明確而侷限。上午 7:00~9:00 速率沒有大幅降低，反而是連續降低的過程，且一路到下午，構成"日間時段"，而 17:00~19:00 的下班時間則有明顯壅塞，速率最後會於晚間回升。有了這些初步觀察，我們想知道是否能透過分析訂定出適合復興路的尖峰、離峰時段，讓交控更彈性更有效率。
+	* 小結論 : 從動圖中我們可以發現，復興路的壅塞時段沒有如交控中心所訂定的如此明確而侷限。上午 7:00 ~ 9:00 速率沒有大幅降低，反而是連續降低的過程，且一路到下午，構成"日間時段"，而 17:00 ~ 19:00 的下班時間則有明顯壅塞，速率最後會於晚間回升。有了這些初步觀察，我們想知道是否能透過分析訂定出適合復興路的尖峰、離峰時段，讓交控更彈性更有效率。
 * Q3 : How to define rush hour of 復興路 ?
 	Method 1 : Define peak time / off-peak time with the greatest slope : Paired samples t-test
 	* The rad spots indicate that p value<= 0.045
