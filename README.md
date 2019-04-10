@@ -58,22 +58,28 @@ to make variables forms a column, and the observation in the same time forms a r
 但卻不能完全描述個別路段的速率變化。透過此圖，我們可以進一步將不同站點的"日間時段"中特殊的速率值抓出來進行比較，同時也個別探討紅點標註的時刻為何有明顯速率變化。
 * Q1-4 : To observe the feature of speed in rush hours of different spots.
 	* 箱形圖
-* Q1-5 : 詳細
+* Q1-5 : 紅點時間 詳細
 
 ## **2019-03-21 Week5**
 * Q2-1 : Can we assume that the speed at each and every adjacent observation spots are the same?
-	* Draw linegraph of adjacent observation spots.[Linegraph3](https://github.com/shiny880410/helloworld/blob/master/hw1/linePlot_TwoLines.ipynb)
+	* Draw the heatmap of car speed of 復興路 during a day (matplotlib) [Heatmap](https://github.com/shiny880410/helloworld/blob/master/hw1/heatmap.ipynb)
+![image](https://github.com/shiny880410/helloworld/blob/master/hw1/heatmap.png)
+	* 小結論 : 為了在一張二維的圖表上同時呈現時間、速率、站點間的關係這三個變因，因此我們決定用熱圖來顯示較為清楚。圖中顏色深的區塊為
+速率較低的時段，我們發現相鄰兩站點的速率其實並不如我們想像中相近，因此假設一個路段的速率是連續變化的似乎不太妥當。因此我們將相鄰站點的v-t圖疊圖相比較，
+探討速率如何不同。
+* Q2-2 : The relation of speed of adjacent observation spots.
+	* Draw linegraph of adjacent observation spots. [Linegraph3](https://github.com/shiny880410/helloworld/blob/master/hw1/linePlot_TwoLines.ipynb)
 	* The difference in speed between spots are subtle but important.
 	* The speed curve of some adjacent observation spots share the same trend.
 	* We plot the v-t curve again with z-score to vanish the gap between spots.
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw1/%E7%9B%B8%E9%84%B0%E7%AB%99%E9%80%9F%E7%8E%87.png)
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw1/%E7%9B%B8%E9%84%B0%E7%AB%99%E9%80%9F%E7%8E%87zscore.png)
-	* Determine the distance between two curves 
 	* 小結論 : 
-* Q2-2 : Heat map of speed
-	* Draw the heatmap of car speed of 復興路 during a day (matplotlib) [Heatmap](https://github.com/shiny880410/helloworld/blob/master/hw1/heatmap.ipynb)
-![image](https://github.com/shiny880410/helloworld/blob/master/hw1/heatmap.png)
+* Q2-3 : Determine the distance between two curves.
 	* 小結論 : 
+* Q2-4 : Divide spots into several types.
+	* 小結論 : 
+
 ## **2019-03-28 Week6**
 * Q3-1 : We plan to conduct Reynolds Transport Theorem to see that whether the car speeds perform fluid properties.
 ## **2019-04-04 Week7**
