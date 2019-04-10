@@ -58,6 +58,7 @@ to make variables forms a column, and the observation in the same time forms a r
 但卻不能完全描述個別路段的速率變化。透過此圖，我們可以進一步將不同站點的"日間時段"中特殊的速率值抓出來進行比較，同時也個別探討紅點標註的時刻為何有明顯速率變化。
 * Q1-4 : To observe the feature of speed in rush hours of different spots.
 	* Draw Box plot of different observation spots [Box plot](https://github.com/shiny880410/helloworld/blob/master/hw1/Box.ipynb)
+
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw1/boxplot.png)
 * Q1-5 : 紅點時間 詳細
 
