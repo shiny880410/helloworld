@@ -58,7 +58,7 @@ to make variables forms a column, and the observation in the same time forms a r
 但卻不能完全描述個別路段的速率變化。透過此圖，我們可以進一步將不同站點的"日間時段"中特殊的速率值抓出來進行比較，同時也個別探討紅點標註的時刻為何有明顯速率變化。
 * Q1-4 : To observe the feature of speed in rush hours of different spots.
 	* 箱形圖
-* Q1-5 : 
+* Q1-5 : 詳細
 
 ## **2019-03-21 Week5**
 * Q2-1 : Can we assume that the speed at each and every adjacent observation spots are the same?
@@ -66,11 +66,14 @@ to make variables forms a column, and the observation in the same time forms a r
 	* The difference in speed between spots are subtle but important.
 	* The speed curve of some adjacent observation spots share the same trend.
 	* We plot the v-t curve again with z-score to vanish the gap between spots.
-![image]()
-![image]()
+![image](https://github.com/shiny880410/helloworld/blob/master/hw1/%E7%9B%B8%E9%84%B0%E7%AB%99%E9%80%9F%E7%8E%87.png)
+![image](https://github.com/shiny880410/helloworld/blob/master/hw1/%E7%9B%B8%E9%84%B0%E7%AB%99%E9%80%9F%E7%8E%87zscore.png)
+	* Determine the distance between two curves 
+	* 小結論 : 
 * Q2-2 : Heat map of speed
 	* Draw the heatmap of car speed of 復興路 during a day (matplotlib) [Heatmap](https://github.com/shiny880410/helloworld/blob/master/hw1/heatmap.ipynb)
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw1/heatmap.png)
+	* 小結論 : 
 ## **2019-03-28 Week6**
-* Q7 : We plan to conduct Leibniz integral rule to see that whether the car speeds perform fluid properties
+* Q3-1 : We plan to conduct Reynolds Transport Theorem to see that whether the car speeds perform fluid properties.
 ## **2019-04-04 Week7**
