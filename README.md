@@ -59,7 +59,7 @@ to make variables forms a column, and the observation in the same time forms a r
 * Q1-4 : To observe the feature of speed in rush hours of different spots.
 	* Draw Box plot of different observation spots [Box plot](https://github.com/shiny880410/helloworld/blob/master/hw1/Box.ipynb)  
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw1/boxplot.png)  
-	* 小結論 : 我們用z score(後面會提到)之後的速率畫箱型圖，減少不同站點間的偏移，專注於速率分布。
+	* 小結論 : 我們用標準化之後的速率畫箱型圖，減少不同站點間的偏移，專注於速率分布。
 * Q1-5 : The reason behind red dots.
 	* 小結論 : 直觀來看，考量大多數公司上下班時間，以及根據經驗法則該時段搭乘捷運人數也會大幅增加，因此推論因為早上上班通勤時間壅塞，造成 7:00 至 7:30 速率連續明顯下降，17:00、19:00、21:00 亦有下班、
 下課通勤人數造成車速下降。之後將考慮輔以實際捷運人流、紅綠燈個數與秒數等，根據特定時刻運用分析方法驗證。
@@ -84,7 +84,8 @@ to make variables forms a column, and the observation in the same time forms a r
 	* 小結論 : 網路上查到很多衡量兩曲線的方法，選擇了這個演算法，但是還有調整的空間。知道兩曲線的相似程度，我們可以按照兩站點速率變化的相似程度，
 將站點分成幾個小組別討論細部特徵。
 * Q2-4 : Divide spots into several types.
-	* 小結論 : 由。
+	* 小結論 : 由距離分析與觀察來看，我們可以發現1、2觀測站較為相似，第4、5站較為相似。較為相似，有同趨勢，且彼此之間有塞車時間延遲的現象。第3站則是速率全日相對穩定且快速，可能
+與紅綠燈與線道個數有關。之後將輔以箱型圖分析站與站之間的關係。
 ## **2019-03-28 Week6**
 * Q3-1 : We plan to conduct Reynolds Transport Theorem to see that whether the car speeds perform fluid properties.
 ## **2019-04-04 Week7**
