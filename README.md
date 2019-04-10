@@ -76,7 +76,9 @@ to make variables forms a column, and the observation in the same time forms a r
 	* The speed curve of some adjacent observation spots share the same trend.
 	* We plot the v-t curve again with z-score to vanish the gap between spots.
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw1/%E7%9B%B8%E9%84%B0%E7%AB%99%E9%80%9F%E7%8E%87.png)
+![image](https://github.com/shiny880410/helloworld/blob/master/hw1/%E7%9B%B8%E9%84%B0%E7%AB%99%E9%80%9F%E7%8E%87(4%2C5%E7%AB%99).png)
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw1/%E7%9B%B8%E9%84%B0%E7%AB%99%E9%80%9F%E7%8E%87zscore.png)
+![image](https://github.com/shiny880410/helloworld/blob/master/hw1/%E7%9B%B8%E9%84%B0%E7%AB%99%E9%80%9F%E7%8E%87zscore(4%2C5%E7%AB%99).png)
 	* 小結論 : 兩相鄰站點之間有一定的速率變化趨勢，但是卻有一個速度差，因此我們透過取z分數來消除差距、觀察趨勢。但我們想更進一步量化兩條曲線的相似程度，
 因此想透過兩曲線間的距離來取得相似度。
 * Q2-3 : Determine the distance between two curves.
@@ -84,7 +86,7 @@ to make variables forms a column, and the observation in the same time forms a r
 	* 小結論 : 網路上查到很多衡量兩曲線的方法，選擇了這個演算法，但是還有調整的空間。知道兩曲線的相似程度，我們可以按照兩站點速率變化的相似程度，
 將站點分成幾個小組別討論細部特徵。
 * Q2-4 : Divide spots into several types.
-	* 小結論 : 由距離分析與觀察來看，我們可以發現1、2觀測站較為相似，第4、5站較為相似。較為相似，有同趨勢，且彼此之間有塞車時間延遲的現象。第3站則是速率全日相對穩定且快速，可能
+	* 小結論 : 由距離分析與觀察來看，我們可以發現1、2觀測站較為相似，第4、5站較為相似，有同趨勢，且彼此之間有塞車時間延遲的現象，推測他們有相近的道路性質。第3站則是速率全日相對穩定且快速，可能
 與紅綠燈與線道個數有關。之後將輔以箱型圖分析站與站之間的關係。
 ## **2019-03-28 Week6**
 * Q3-1 : We plan to conduct Reynolds Transport Theorem to see that whether the car speeds perform fluid properties.
