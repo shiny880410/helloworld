@@ -57,7 +57,7 @@ to make variables forms a column, and the observation in the same time forms a r
 且一路到下午，構成"日間時段"( 7:10 至 22:00 )，而 17:00 至 19:00 的下班時間則達到日均速率最低，壅塞明顯，但速率在晚間七點後有明顯回升。因此交控中心訂定的尖峰離峰時間有其代表性，
 但卻不能完全描述個別路段的速率變化。透過此圖，我們可以進一步將不同站點的"日間時段"中特殊的速率值抓出來進行比較，同時也個別探討紅點標註的時刻為何有明顯速率變化。
 * Q1-4 : To observe the feature of speed in rush hours of different spots.
-	* Draw Box plot [Box plot](https://github.com/shiny880410/helloworld/blob/master/hw1/Box.ipynb)
+	* Draw Box plot of different observation spots [Box plot](https://github.com/shiny880410/helloworld/blob/master/hw1/Box.ipynb)
 * Q1-5 : 紅點時間 詳細
 
 ## **2019-03-21 Week5**
