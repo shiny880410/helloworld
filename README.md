@@ -41,7 +41,7 @@ to make variables forms a column, and the observation in the same time forms a r
 ![image](https://github.com/shiny880410/helloworld/blob/master/hw1/%E5%BE%A9%E8%88%88%E5%BE%80%E5%8D%97.gif)
 	* 小結論 : 從動圖中我們可以有些初步觀察，並且進一步想知道是否能透過分析訂定出適合復興路的尖峰、離峰時段，讓交控更彈性更有效率。
 * Q1-3 : How to define rush hour of 復興路 ?
-	*__Method 1__ : Define peak time / off-peak time with outliers : One sample t-test (T.TEST)
+	* __Method 1__ : Define peak time / off-peak time with outliers : One sample t-test (T.TEST)
 	* Reference : 
 	1. [高雄市區建國路段旅行時間差異性檢定與推估](https://research.kcg.gov.tw/upload/RelFile/Research/1069/635852659299120887.pdf)
 	2. [五福路車流特性分析與應用](https://www.tbkc.gov.tw/upload/WebList/141/3bb52ea3-d744-43ef-a84d-b7dc2dc6c117/AllFiles/105%E4%BA%94%E7%A6%8F%E8%B7%AF%E8%BB%8A%E6%B5%81%E7%89%B9%E6%80%A7%E5%88%86%E6%9E%90%E8%88%87%E6%87%89%E7%94%A8.pdf)
