@@ -89,3 +89,11 @@ to make variables forms a column, and the observation in the same time forms a r
 ## **2019-03-28 Week6**
 * Q3-1 : We plan to conduct Reynolds Transport Theorem to see that whether the car speeds perform fluid properties.
 ## **2019-04-04 Week7**
+## **2019-04-11 Week8**
+## **2019-04-18 Week9**
+## **2019-04-25 Week10**
+## **2019-05-02 Week11**
+漫長的等待車流資料被爬下來的時間~
+## **2019-05-09 Week12**
+可悲期中考!!
+## **2019-05-16 Week13**
