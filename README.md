@@ -99,11 +99,11 @@ to make variables forms a column, and the observation in the same time forms a r
 ## **2019-05-16 Week13**
 ### HW4&5&6 : 車禍資料分析
 * Q1 : 是否能透過107年度車禍資料，了解造成死亡車禍的因素，並找到改善方向?
-	* 由臺北市政府資料開放平台下載A1及A2類交通事故明細[資料平台網站](https://data.taipei/dataset/search?keyword=%E4%BA%A4%E9%80%9A%E4%BA%8B%E6%95%85%E8%B3%87%E6%96%99)
+	* 由臺北市政府資料開放平台下載A1及A2類交通事故明細[(資料平台網站)](https://data.taipei/dataset/search?keyword=%E4%BA%A4%E9%80%9A%E4%BA%8B%E6%95%85%E8%B3%87%E6%96%99)
 	* 將資料以
 * Q2 : 是否能透過道路性質預測車速以利道路管制或規劃?
-	* 由臺北市政府資料開放平台下載復興路與市民大道上各站點之車流與車速[資料平台網站](https://data.taipei/dataset/detail/metadata?id=b5aaf33a-a6dc-4836-bce6-09986241fe11)
-		由於
+	* 由臺北市政府資料開放平台下載復興路與市民大道上各站點之車流與車速[(資料平台網站)](https://data.taipei/dataset/detail/metadata?id=b5aaf33a-a6dc-4836-bce6-09986241fe11)
+		*由於
 
 
 
