@@ -99,17 +99,16 @@ to make variables forms a column, and the observation in the same time forms a r
 ## **2019-05-16 Week13**
 ### HW4&5&6 : 車禍資料分析
 * Q1 : 是否能透過107年度車禍資料，了解造成死亡車禍的因素，並找到改善方向?
-	* 由臺北市政府資料開放平台下載A1及A2類交通事故明細與事故代碼對照表[(資料平台網站)](https://data.taipei/dataset/search?keyword=%E4%BA%A4%E9%80%9A%E4%BA%8B%E6%95%85%E8%B3%87%E6%96%99)
+	* 由臺北市政府資料開放平台下載A1及A2類交通事故明細與事故代碼對照表。[(資料平台網站)](https://data.taipei/dataset/search?keyword=%E4%BA%A4%E9%80%9A%E4%BA%8B%E6%95%85%E8%B3%87%E6%96%99)
 		* (註: A1指造成人員當場或二十四小時內死亡之交通事故；A2指造成人員受傷或超過二十四小時死亡之交通事故。)
 	* 將資料裡的代碼依照對照表換成文字，並進行資料清理。[(Data)](https://docs.google.com/spreadsheets/d/1A3V6ncj7VLNDiDkchaYPIYmqrA0trkEj8L-tHoaAyZs/edit#gid=1460764096)
 		* 因為原始資料是將對撞的交通事故分為兩起案件紀錄(即為每一車留下一筆紀錄)，不方便我們分析，故我們以時間軸將同一場車禍資料合併，才能發現車禍與車禍之間的相關性，例如對撞車種之間的關聯性等等。另外，為了不讓資料遺失，我們將"死亡"字串出現在文本的次數，代替每起案件的死亡人數(受傷者亦同)，並以中文字以十歲為區間代替年齡，讓數字資料只剩下車速以利判讀。
 	* 將我們所關心的關鍵字詞列出來，並觀察彼此交互在文本(不同場車禍)之間出現的次數，最後將矩陣降維呈現，從圖中可以看出名詞之間的相關性。[(車禍事故明細分析)]()
 * Q2 : 是否能透過道路性質預測車速以利道路管制或規劃?
-	* 由臺北市政府資料開放平台下載復興路與市民大道上各站點之車流與車速[(資料平台網站)](https://data.taipei/dataset/detail/metadata?id=b5aaf33a-a6dc-4836-bce6-09986241fe11)
-	* 透過實地走訪記錄復興路與市民大道上之**紅綠燈是否能左轉**與**車道數** (之後若要增加分析的路段，將由網路抓取相關資料)
-	* 將資料存入試算表並進行資料清理 [(Data)](https://docs.google.com/spreadsheets/d/1abC0kNTX9YRXDCMU-v9c9aYlXSGakNKbVcIR9t-YgH0/edit#gid=0)
-		* 由於車流與車速分別為兩個不同的資料來源，因此我們依照時間軸，在試算表中篩選同時有車流與車速資料的時刻，並將該時刻的資料抓取下來依照站點排列
-		，再分別存入x-train data以及y-train data，以作為可放入模型中training的資料。(註 : 資料中車道數2.5為有路間之路段)
+	* 由臺北市政府資料開放平台下載復興路與市民大道上各站點之車流與車速。[(資料平台網站)](https://data.taipei/dataset/detail/metadata?id=b5aaf33a-a6dc-4836-bce6-09986241fe11)
+	* 透過實地走訪記錄復興路與市民大道上之**紅綠燈是否能左轉**與**車道數** (之後若要增加分析的路段，將由網路抓取相關資料)。
+	* 將資料存入試算表並進行資料清理。 [(Data)](https://docs.google.com/spreadsheets/d/1abC0kNTX9YRXDCMU-v9c9aYlXSGakNKbVcIR9t-YgH0/edit#gid=0)
+		* 由於車流與車速分別為兩個不同的資料來源，因此我們依照時間軸，在試算表中篩選同時有車流與車速資料的時刻，並將該時刻的資料抓取下來依照站點排列，再分別存入x-train data以及y-train data，以作為可放入模型中training的資料。(註 : 資料中車道數2.5為有路間之路段)
 	* 以**紅綠燈能左轉之個數**、**車道數**、**車流**為x data，**車速**為y-data，透過Neural network建模預測車速並計算誤差 [(Neural network)](https://github.com/shiny880410/helloworld/blob/master/hw4-6/NeuralNetwork.ipynb)
 		* 會考慮紅綠燈是否能左轉為影響車速的主要因素，是由於我們依照過去的行車經驗，認為能左轉的路口較容易因為橫向車道之紅綠燈號不一致而使車流回堵。
 * 結論 : 我們透過架設結點與層數，預測了33筆車速，並有其中30筆達到10%以內的誤差。期望之後能以更多道路為training data使模型更完善，並在之後若要進行道路施工、捷運工程等長期縮減道路的大型工程時，能以紅綠燈號的改變與周圍道路進行分流，使路段不會長期堵塞造成行車不便。(就像我家門口，每天塞車害我遲到qq)
