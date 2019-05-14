@@ -105,7 +105,11 @@ to make variables forms a column, and the observation in the same time forms a r
 	* 由臺北市政府資料開放平台下載復興路與市民大道上各站點之車流與車速[(資料平台網站)](https://data.taipei/dataset/detail/metadata?id=b5aaf33a-a6dc-4836-bce6-09986241fe11)
 	* 透過實地走訪記錄復興路與市民大道上之**紅綠燈是否能左轉**與**車道數** (之後若要增加分析的路段，將由網路抓取相關資料)
 	* 將資料存入試算表並進行資料清理 [(Data)](https://docs.google.com/spreadsheets/d/1abC0kNTX9YRXDCMU-v9c9aYlXSGakNKbVcIR9t-YgH0/edit#gid=0)
-		* 由於
+		* 由於車流與車速分別為兩個不同的資料來源，因此我們依照時間軸，在試算表中篩選同時有車流與車速資料的時刻，並將該時刻的資料抓取下來依照站點排列
+		，作為可放入模型中training的資料。(註 : 資料中車道數2.5為有路間之路段)
+	* 以紅綠燈能左轉之個數、車道數、車流為x data，車速為y-data，透過Neural network建模預測車速並計算誤差 [Neural network]()
+		* 會考慮紅綠燈是否能左轉為影響車速的主要因素，是由於我們依照過去的行車經驗，認為能左轉的路口較容易因為橫向車道之紅綠燈號不一致而使車流回堵。
+
 
 
 
