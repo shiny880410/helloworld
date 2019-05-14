@@ -103,6 +103,8 @@ to make variables forms a column, and the observation in the same time forms a r
 	* 將資料以
 * Q2 : 是否能透過道路性質預測車速以利道路管制或規劃?
 	* 由臺北市政府資料開放平台下載復興路與市民大道上各站點之車流與車速[(資料平台網站)](https://data.taipei/dataset/detail/metadata?id=b5aaf33a-a6dc-4836-bce6-09986241fe11)
+	* 透過實地走訪記錄復興路與市民大道上之**紅綠燈是否能左轉**與**車道數** (之後若要增加分析的路段，將由網路抓取相關資料)
+	* 將資料存入試算表並進行資料清理 [(Data)](https://docs.google.com/spreadsheets/d/1abC0kNTX9YRXDCMU-v9c9aYlXSGakNKbVcIR9t-YgH0/edit#gid=0)
 		* 由於
 
 
