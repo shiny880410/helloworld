@@ -101,13 +101,13 @@ to make variables forms a column, and the observation in the same time forms a r
 * 練習 : A1車禍與A2車禍的成因是否相似，有甚麼異同?
 	* 由臺北市政府資料開放平台下載 **107年度A1及A2類交通事故明細** 與 **事故代碼對照表** 。[(資料平台網站)](https://data.taipei/dataset/search?keyword=%E4%BA%A4%E9%80%9A%E4%BA%8B%E6%95%85%E8%B3%87%E6%96%99)
 		* (註: A1指造成人員當場或二十四小時內死亡之交通事故；A2指造成人員受傷或超過二十四小時死亡之交通事故。)
-	* 將資料裡的代碼依照對照表換成文字，並進行資料清理。[(Data工作頁)](https://docs.google.com/spreadsheets/d/1A3V6ncj7VLNDiDkchaYPIYmqrA0trkEj8L-tHoaAyZs/edit#gid=1460764096)
+	* 將資料裡的代碼依照對照表換成文字，並進行資料清理。[(Data工作頁)](https://docs.google.com/spreadsheets/d/1A3V6ncj7VLNDiDkchaYPIYmqrA0trkEj8L-tHoaAyZs/edit?usp=sharing)
 		* 我們保留每一筆資料的不同，不進行合併，並在之後以斷詞、找詞頻方式找到不同類型車禍主因。
 	* 將資料分成A1與A2兩大類別，同時因為A2事件中死亡人數極少因此可以忽略，我們將其依序分為"死亡"與"受傷"兩大類，再分別進行斷詞。在此我們直接用jieba而不使用TF-IDF，是因為我們的資料並非一般文本有許多冗言贅字或嘆詞等，不需要依照出現次數進行篩選。在我們的資料中，出現字詞頻率高即代表其為車禍發生的重要因素。[(斷詞與共現性)](https://github.com/shiny880410/helloworld/blob/master/hw4-6/practice.ipynb)
 * 心得 : 透過這個練習，我們更了解老師上課的內容，也對手上的資料更熟悉，並在做完練習後進一步對資料產生疑問，並試著提出下面的問題與想出解決的分析方法。
 * 問題一 : 是否能透過了解造成死亡車禍的因素，並找到可以著手改善的地方?
 	* 由臺北市政府資料開放平台下載 **107年度A1及A2類交通事故明細** 與 **事故代碼對照表** 。[(資料平台網站)](https://data.taipei/dataset/search?keyword=%E4%BA%A4%E9%80%9A%E4%BA%8B%E6%95%85%E8%B3%87%E6%96%99)
-	* 將資料裡的代碼依照對照表換成文字，並進行資料清理。[(Data3工作頁)](https://docs.google.com/spreadsheets/d/1A3V6ncj7VLNDiDkchaYPIYmqrA0trkEj8L-tHoaAyZs/edit#gid=1460764096)
+	* 將資料裡的代碼依照對照表換成文字，並進行資料清理。[(Data3工作頁)](https://docs.google.com/spreadsheets/d/1A3V6ncj7VLNDiDkchaYPIYmqrA0trkEj8L-tHoaAyZs/edit?usp=sharing)
 		* 與上述不同的是，由於原始資料是將對撞的交通事故分為兩起案件紀錄(即為每一車留下一筆紀錄)，不方便我們分析，故我們以時間軸將同一場車禍資料合併，才能發現車禍與車禍之間的相關性，例如對撞車種之間的關聯性等等。另外，為了不讓資料遺失，我們將"死亡"字串出現在文本的次數，代替每起案件的死亡人數(受傷者亦同)，並以文字以十歲為區間代替年齡，讓數字資料只剩下車速以利判讀。
 	* 將我們所關心的關鍵字詞列出來，並觀察彼此交互在文本(不同場車禍)之間出現的次數，最後將矩陣降維呈現，從圖中可以看出名詞之間的相關性。[(車禍事故明細分析)](https://github.com/shiny880410/helloworld/blob/master/hw4-6/PCA2.ipynb)
 * 結論一 :  從最後所畫成的圖表，我們可以發現死亡車禍確實有和許多特定的詞彙相關，而這也對應到了特定的族群、車種、環境與道路型態。而從這些訊息可以提供相關單位改善道路的方向與進行有效的宣導或臨檢。
