@@ -99,7 +99,7 @@ to make variables forms a column, and the observation in the same time forms a r
 ## **2019-05-16 Week13**
 ### HW4&5&6 : 車禍資料分析
 * 問題一 : 是否能透過了解造成死亡車禍的因素，並找到可以著手改善的地方?
-	* 由臺北市政府資料開放平台下載107年度A1及A2類交通事故明細與事故代碼對照表。[(資料平台網站)](https://data.taipei/dataset/search?keyword=%E4%BA%A4%E9%80%9A%E4%BA%8B%E6%95%85%E8%B3%87%E6%96%99)
+	* 由臺北市政府資料開放平台下載**107年度A1及A2類交通事故明細**與**事故代碼對照表**。[(資料平台網站)](https://data.taipei/dataset/search?keyword=%E4%BA%A4%E9%80%9A%E4%BA%8B%E6%95%85%E8%B3%87%E6%96%99)
 		* (註: A1指造成人員當場或二十四小時內死亡之交通事故；A2指造成人員受傷或超過二十四小時死亡之交通事故。)
 	* 將資料裡的代碼依照對照表換成文字，並進行資料清理。[(Data)](https://docs.google.com/spreadsheets/d/1A3V6ncj7VLNDiDkchaYPIYmqrA0trkEj8L-tHoaAyZs/edit#gid=1460764096)
 		* 因為原始資料是將對撞的交通事故分為兩起案件紀錄(即為每一車留下一筆紀錄)，不方便我們分析，故我們以時間軸將同一場車禍資料合併，才能發現車禍與車禍之間的相關性，例如對撞車種之間的關聯性等等。另外，為了不讓資料遺失，我們將"死亡"字串出現在文本的次數，代替每起案件的死亡人數(受傷者亦同)，並以中文字以十歲為區間代替年齡，讓數字資料只剩下車速以利判讀。
