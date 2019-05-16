@@ -116,6 +116,7 @@ to make variables forms a column, and the observation in the same time forms a r
 	* 男性較女性更傾向以高速行駛，二十到三十歲是發生事故的主要年齡層，因此可有效的局部加強宣導相關道路安全觀念。
 	* 晴天也十分容易發生死亡車禍，因此推估天氣對事故發生影響有限。 
 	* 行人易在交叉路口附近發生車禍。
+![image](https://github.com/shiny880410/helloworld/blob/master/hw0/20190301/2288WC.png)
 
 * 問題二 : 是否能透過道路性質預測車速以利道路管制或規劃?
 	* 由臺北市政府資料開放平台下載 **復興路** 與 **市民大道** 上各站點之車流與車速。[(資料平台網站)](https://data.taipei/dataset/detail/metadata?id=b5aaf33a-a6dc-4836-bce6-09986241fe11)
