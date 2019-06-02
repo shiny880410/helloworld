@@ -135,7 +135,7 @@ to make variables forms a column, and the observation in the same time forms a r
 
 <br />其中，我們假設紅綠燈數為控制車流前進的壓力梯度，且路口左轉之車流待轉時會減速至幾乎靜止，和邊界無滑動之流體相互對應。而密度則是以車道佔有率(特定時間內一小路段被車輛佔據的時間百分比)表示，因為兩者呈正比。
 <br />並利用 Buckingham Pi Theorem 對其進行無因次化，我們有7個物理量，而這些物理量共有3個獨立的因次，則原方程式可以寫成由4個無因次的參數 π1, π2, π3, π4組成的方程式，而這些無因次的參數是由原方程式中的物理量所組成。這個方法讓我們就算不了解參數間確切的方程式也能找出其中相關的物理量。在選取repeating variables時，因為是要找和速度的關聯性，因此要避開速度項，並分別由幾何形狀、流體性質、動力學三個方面選取獨立的參數，因此在這裡我們選擇了ρ、D、ΔP，並得到下列 π 項。
-<br />![image](https://github.com/shiny880410/helloworld/blob/master/final/pi1.gif)
+<br />:![image](https://github.com/shiny880410/helloworld/blob/master/final/pi1.gif):
 <br />![image](https://github.com/shiny880410/helloworld/blob/master/final/pi2.gif)
 <br />![image](https://github.com/shiny880410/helloworld/blob/master/final/pi3.gif)
 <br />![image](https://github.com/shiny880410/helloworld/blob/master/final/pi4.gif)
