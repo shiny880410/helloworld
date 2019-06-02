@@ -129,7 +129,7 @@ to make variables forms a column, and the observation in the same time forms a r
 ## **期末專題 : 車流車速分析與預測**
 ### 利用 Neural Network 預測車速
 * 找出與車速有關的參數 
-	* 在選定 X-train data 之前，我們需要找出主要影響車速變化的重要參數。由於道路性質複雜，我們將其想像成二維平板流進行分析，並列出下列物理量，探討其是否適用流體性質。
+在選定 X-train data 之前，我們需要找出主要影響車速變化的重要參數。由於道路性質複雜，我們將其想像成二維平板流進行分析，並列出下列物理量，探討其是否適用流體性質。
 ![image](板流圖片) 		       
 ![image](https://github.com/shiny880410/helloworld/blob/master/final/pic.PNG) 		       
 
