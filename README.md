@@ -137,6 +137,7 @@ to make variables forms a column, and the observation in the same time forms a r
 $$D=\frac{10K}{Lv+Ld}$$
 <br />並利用 Buckingham Pi Theorem 對其進行無因次化，我們有7個物理量，而這些物理量共有3個獨立的因次，則原方程式可以寫成由4個無因次的參數 π1, π2, π3, π4組成的方程式，而這些無因次的參數是由原方程式中的物理量所組成。這個方法讓我們就算不了解參數間確切的方程式也能找出其中相關的物理量。
 $$π1=\frac{L}{D}$$
+$\frac{3+8a}{5b+6}$
 ### 分析A1與A2交通事故原因並比較
 
 
