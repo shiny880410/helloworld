@@ -130,8 +130,9 @@ to make variables forms a column, and the observation in the same time forms a r
 ### 利用 Neural Network 預測車速
 * 找出與車速有關的參數 
 	* 在選定 X-train data 之前，我們需要找出主要影響車速變化的重要參數。由於道路性質複雜，我們將其想像成二維平板流進行分析，並列出下列物理量，探討其是否適用流體性質。
-![image](https://github.com/shiny880410/helloworld/blob/master/final/pic.PNG)
-	其中，我們假設紅綠燈數為控制車流前進的壓力梯度，且路口左轉之車流待轉時會減速至幾乎靜止，和邊界無滑動之流體相互對應。而密度則是將車道佔有率(特定時間內一小路段被車輛佔據的時間百分比)依照下列公式進行換算 :
+![image](https://github.com/shiny880410/helloworld/blob/master/final/pic.PNG) 		       
+
+	<br />其中，我們假設紅綠燈數為控制車流前進的壓力梯度，且路口左轉之車流待轉時會減速至幾乎靜止，和邊界無滑動之流體相互對應。而密度則是將車道佔有率(特定時間內一小路段被車輛佔據的時間百分比)依照下列公式進行換算 :
 利用 Buckingham Pi Theorem 
 
 ### 分析A1與A2交通事故原因並比較
