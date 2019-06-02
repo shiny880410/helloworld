@@ -133,7 +133,7 @@ to make variables forms a column, and the observation in the same time forms a r
 ![image](https://github.com/shiny880410/helloworld/blob/master/final/pic.PNG) 		       
 
 	<br />其中，我們假設紅綠燈數為控制車流前進的壓力梯度，且路口左轉之車流待轉時會減速至幾乎靜止，和邊界無滑動之流體相互對應。而密度則是將車道佔有率(特定時間內一小路段被車輛佔據的時間百分比)依照下列公式進行換算 :
-$$ D = \frac{10K}{Lv+Ld}
+$$ D = \frac{10K}{Lv+Ld} $$
 利用 Buckingham Pi Theorem 
 
 ### 分析A1與A2交通事故原因並比較
