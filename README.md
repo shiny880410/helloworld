@@ -140,6 +140,7 @@ $π1=\frac{L}{D}$
 $$π2=\frac{L}{D}$$
 $$π3=\frac{L}{D}$$
 $$π4=\frac{L}{D}$$
+![](http://latex.codecogs.com/gif.latex?\\frac{1}{1+sin(x)})
 並得到π1與其他π之間的關係 :
 $$π4=\frac{L}{D}$$
 <br />由上面結果可以發現，速度和體積流率、黏滯係數、平板間距有關，呼應了我們在hw4-6中的Neural Network裡依照生活經驗選擇輸入的三個X-data : 紅綠燈能左轉之個數、車道數與車流。我們π1和pressure coefficient有關。
