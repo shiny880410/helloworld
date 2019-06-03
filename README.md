@@ -131,7 +131,7 @@ to make variables forms a column, and the observation in the same time forms a r
 * 找出與車速有關的參數 
 <br />在選定 X-train data 之前，我們需要找出主要影響車速變化的重要參數。由於道路性質複雜，我們將其想像成二維平板流進行分析，並列出下列物理量，探討其是否適用流體性質。
 ![image](https://github.com/shiny880410/helloworld/blob/master/final/plate.PNG) 
-<div align=center><img width="400" height="400" src="https://github.com/shiny880410/helloworld/blob/master/final/plate.PNG"/></div>		       
+<div align=center><img width="1200" height="800" src="https://github.com/shiny880410/helloworld/blob/master/final/plate.PNG"/></div>		       
 ![image](https://github.com/shiny880410/helloworld/blob/master/final/pic.PNG) 		       
 
 <br />其中，我們假設紅綠燈數為控制車流前進的壓力梯度，且路口左轉之車流待轉時會減速至幾乎靜止，和邊界無滑動之流體相互對應。而密度則是以車道佔有率(特定時間內一小路段被車輛佔據的時間百分比)表示，因為兩者呈正比。
