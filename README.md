@@ -138,14 +138,11 @@ to make variables forms a column, and the observation in the same time forms a r
 <div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/pi2.gif"/></div>
 <div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/pi3.gif"/></div>
 <div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/pi4.gif"/></div>
-<br />![image](https://github.com/shiny880410/helloworld/blob/master/final/pi1.gif)
-<br />![image](https://github.com/shiny880410/helloworld/blob/master/final/pi2.gif)
-<br />![image](https://github.com/shiny880410/helloworld/blob/master/final/pi3.gif)
-<br />![image](https://github.com/shiny880410/helloworld/blob/master/final/pi4.gif)
 <br />並得到π1與其他π之間的關係 :
-<br />![image](https://github.com/shiny880410/helloworld/blob/master/final/pis.gif)
+<br />
+<div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/pis.gif"/></div>
+<br />
 <br />由上面結果可以發現，速度和體積流率、黏滯係數、平板間距有關，呼應了我們在hw4-6中的Neural Network裡依照生活經驗選擇輸入的三個X-data : 紅綠燈能左轉之個數、車道數與車流。我們π1和pressure coefficient有關。
-<div align=center><img width="150" height="150" src="https://img-blog.csdn.net/20161028230559575"/></div>
 ### 分析A1與A2交通事故原因並比較
 * 在hw4-6中，我們針對A1交通事故(當場或二十四小時內死亡之交通事故)進行相關性分析並得到和A1交通事故相關的原因。在期末專題中，我們進一步依照同樣方法分析A2交通事故資料並比較。[(A2車禍事故明細分析)]()
 
