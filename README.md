@@ -154,7 +154,7 @@ to make variables forms a column, and the observation in the same time forms a r
 <div align="center"><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/p1p3.PNG"/><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/p1sp3.PNG"/></div>
 <div align="center"><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/p1p4.PNG"/><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/p1sp4.PNG"/></div>
 <br />(補pi4)
-<br />接著我們將資料丟入Neural Network進行訓練，並以 π2, π3, π4為輸入預測 π1，再由 π1換出車速。[A](https://github.com/shiny880410/helloworld/blob/master/final/final_nw.ipynb)
+<br />接著我們將資料丟入Neural Network進行訓練，並以 π2, π3, π4為輸入預測 π1，再由 π1換出車速。[A]()
 <br />我們嘗試透過不同方法調整輸入值讓預測進步。(補pi4新數據)
 
 ### 分析A1與A2交通事故原因並比較
