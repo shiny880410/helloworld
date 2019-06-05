@@ -127,7 +127,7 @@ to make variables forms a column, and the observation in the same time forms a r
 		* 會考慮紅綠燈是否能左轉為影響車速的主要因素，是由於我們依照過去的行車經驗，認為能左轉的路口較容易因為橫向車道之紅綠燈號不一致而使車流回堵。
 * 結論二 : 我們透過架設結點與層數，預測了33筆車速，並有其中30筆達到10%以內的誤差。期望之後能以更多道路為training data使模型更完善，並在之後若要進行道路施工、捷運工程等長期縮減道路的大型工程時，能以紅綠燈號的改變與周圍道路進行分流，使路段不會長期堵塞造成行車不便(就像我家門口，每天塞車害我遲到qq)。或是在連假時的觀光景點路段，可以透過往年已知的車流，調整紅綠燈號達到分流，減少塞車時間。
 ## **期末專題 : 車流車速分析與預測**
-### 規劃道路可以使交通更順暢_利用 Neural Network 預測車速
+### 透過規劃道路使交通更順暢_利用 Neural Network 預測車速
 * 爬資料與資料清洗
 <br />經過討論，我們的期末專題所需要的數據不只車流車速，然而為了保持時間軸的一致性，我們重新由台北市政府資料開放平台抓取資料。較特別的是因為我們發現測站會隨著時間不同而有開啟或關閉等狀態改變，導致在政府網頁上並非依照固定欄位呈現，因此我們調整抓取資料的方式，先判別測站名稱再抓資料，以確保資料的正確性。 [(台北市政府資料開放平台](https://data.taipei/dataset/detail/preview?id=b5aaf33a-a6dc-4836-bce6-09986241fe11&rid=8a2ea001-f483-4441-a458-af697653296c)/[程式碼)](https://script.google.com/d/MkB5D-mxRFlsVQUA70Tq1n_RWp2vJfyNW/edit?mid=ACjPJvGNqDEAWEKcgpe9iFvj8Rk_xubtqxJCBUQo6A3zcncTWhsvwpewYuxSAtNAp5aKHzhZfnKixDrrCV2H79caQT1OVHsvXbiEnAMzPRyhTzO35Brrj5v5YyvEq-HVmlyYtDPX6Ltkdls&uiv=2)
 <br />我們將動態資料爬下來，包括車流、車速、車道佔有率。[(原始數據_工作頁speeddata/occdata/voldata)](https://docs.google.com/spreadsheets/d/1ACNaFULWc7k1iO9GCjpcKbu3RB0O81z2xHdDfjymZeM/edit?usp=sharing)
