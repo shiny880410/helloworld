@@ -148,7 +148,8 @@ to make variables forms a column, and the observation in the same time forms a r
 <br />由於其中的理論很複雜，難以進行分析得到解析解，因此我們將π1(含有速度項)對不同的π作圖，並求其相關係數，來得道我們預期的車速與其他參數間的關係。因為π2是車道數，不連續，因此我們只和π3、π4作圖，希望能透過運算讓不同π之間是接近線性的，以提高之後預測的準確度。
 <div align="center"><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/p1p3.PNG"/><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/p1sp3.PNG"/></div>
 <div align="center"><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/p1p4.PNG"/><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/p1sp4.PNG"/></div>
-
+<br />(補充相關係數)
+<br />接著我們將資料丟入Neural Network進行訓練，並以 π2, π3, π4為輸入預測 π1，再由 π1換出車速。
 
 ### 分析A1與A2交通事故原因並比較
 * 在hw4-6中，我們針對A1交通事故(當場或二十四小時內死亡之交通事故)進行相關性分析並得到和A1交通事故相關的原因。在期末專題中，我們進一步依照同樣方法分析A2交通事故資料並比較。[(A2車禍事故明細分析)]()
