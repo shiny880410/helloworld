@@ -156,7 +156,7 @@ to make variables forms a column, and the observation in the same time forms a r
 <br />(補pi4)
 
 * 接著我們將資料丟入Neural Network進行訓練，並以 π2, π3, π4為輸入預測 π1，再由 π1換出車速。[(Neurai network final_1)](https://github.com/shiny880410/helloworld/blob/master/final/final_nw.ipynb)
-我們嘗試透過不同方法調整輸入值讓預測進步。(補pi4新數據)
+* 我們嘗試透過不同方法調整輸入值讓預測進步。(補pi4新數據)
 
 ### 分析A1與A2交通事故原因並比較
 * 在hw4-6中，我們針對A1交通事故(當場或二十四小時內死亡之交通事故)進行相關性分析並得到和A1交通事故相關的原因。在期末專題中，我們進一步依照同樣方法分析A2交通事故資料並比較。[(A2車禍事故明細分析)]()
