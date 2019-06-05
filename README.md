@@ -143,7 +143,7 @@ to make variables forms a column, and the observation in the same time forms a r
 <br />並得到無因次的π1與其他π之間的關係 :
 <br />
 <div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/pis.gif"/></div>
-<br />由上面結果可以發現，速度和體積流率、黏滯係數、平板間距有關，呼應了我們在hw4-6中的Neural Network裡依照生活經驗選擇輸入的三個X-data : 車流、紅綠燈能左轉之個數與車道數。同時，我們也發現π1和流體裡的pressure coefficient有關，而Cp又是在描述一個流體裡的Static pressure 與 Dynamic pressure 的關係，就像在一段路上，若紅綠燈提供壓力阻止車子前進，而車子在沒有阻礙的情況下會很自然地想往前，那車子最後前進的速度就會跟紅綠燈有關了。
+<br />由上面結果可以發現，速度和體積流率、黏滯係數、平板間距有關，呼應了我們在hw4-6中的Neural Network裡依照生活經驗選擇輸入的三個X-data : 車流、紅綠燈能左轉之個數與車道數。同時，我們也發現π1平方之後就是流體裡的pressure coefficient (Cp)，而Cp又是在描述一個流體裡的Static pressure 與 Dynamic pressure 的關係，就像在一段路上，若紅綠燈提供壓力阻止車子前進，而車子在沒有阻礙的情況下會很自然地想往前，那車子最後前進的速度就會跟紅綠燈有關了。
 <div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/CP.PNG"/></div>
 由於其中的理論很複雜，難以進行分析得到解析解，因此我們將π1(含有速度項)對不同的π作圖，並求其相關係數。
 
