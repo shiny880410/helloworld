@@ -135,15 +135,15 @@ to make variables forms a column, and the observation in the same time forms a r
 <div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/plate.PNG"/></div>
 <div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/pic.PNG"/></div>		       
 <br />其中，我們假設紅綠燈數為控制車流前進的壓力梯度，且路口左轉之車流待轉時會減速至幾乎靜止，和邊界無滑動之流體相互對應。而密度則是以車道佔有率(特定時間內一小路段被車輛佔據的時間百分比)表示，因為兩者呈正比。
-<br />並利用 Buckingham Pi Theorem 對其進行無因次化，我們有7個物理量，而這些物理量共有3個獨立的因次，則原方程式可以寫成由4個無因次的參數 π1, π2, π3, π4組成的方程式，而這些無因次的參數是由原方程式中的物理量所組成。這個方法讓我們就算不了解參數間確切的方程式也能找出其中相關的物理量。在選取repeating variables時，因為是要找和速度的關聯性，因此要避開速度項，並分別由幾何形狀、流體性質、動力學三個方面選取獨立的參數，因此在這裡我們選擇了ρ、D、ΔP，並得到下列 π 項。
+<br />並利用 Buckingham Pi Theorem 對其進行無因次化，我們有7個物理量，而這些物理量共有3個獨立的因次，則原方程式可以寫成由4個無因次的參數 π1, π2, π3, π4組成的方程式，而這些無因次的參數是由原方程式中的物理量所組成。這個方法讓我們就算不用理論找出參數間確切的方程式也能找出其中和我們關心的車速相關的物理量，是較經濟也較方便的做法。在選取repeating variables時，因為是要找和速度的關聯性，因此要避開速度項，並分別由幾何形狀、流體性質、動力學三個方面選取獨立的參數，因此在這裡我們選擇了ρ、D、ΔP，並得到下列 π 項。
 <div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/pi1.gif"/></div>
 <div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/pi2.gif"/></div>
 <div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/pi3.gif"/></div>
 <div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/pi4.gif"/></div>
-<br />並得到π1與其他π之間的關係 :
+<br />並得到無因次的π1與其他π之間的關係 :
 <br />
 <div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/pis.gif"/></div>
-<br />由上面結果可以發現，速度和體積流率、黏滯係數、平板間距有關，呼應了我們在hw4-6中的Neural Network裡依照生活經驗選擇輸入的三個X-data : 紅綠燈能左轉之個數、車道數與車流。我們π1和pressure coefficient有關。
+<br />由上面結果可以發現，速度和體積流率、黏滯係數、平板間距有關，呼應了我們在hw4-6中的Neural Network裡依照生活經驗選擇輸入的三個X-data : 車流、紅綠燈能左轉之個數與車道數。同時，我們也發現π1和流體裡的pressure coefficient(圖)有關，而Cp又是在描述一個流體裡的Static pressure 與 Dynamic pressure 的關係，就像在一段路上，若紅綠燈提供壓力阻止車子前進，而車子在沒有阻礙的情況下會很自然地想往前，那車子最後前進的速度就會跟紅綠燈有關了。雖然由於其中的理論很複雜，難以進行分析得到解析解，但是我們仍能將π1(含有速度項)對不同的π作圖，並求其相關係數。
 
 ### 分析A1與A2交通事故原因並比較
 * 在hw4-6中，我們針對A1交通事故(當場或二十四小時內死亡之交通事故)進行相關性分析並得到和A1交通事故相關的原因。在期末專題中，我們進一步依照同樣方法分析A2交通事故資料並比較。[(A2車禍事故明細分析)]()
