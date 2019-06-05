@@ -146,6 +146,7 @@ to make variables forms a column, and the observation in the same time forms a r
 <br />由上面結果可以發現，速度和體積流率、黏滯係數、平板間距有關，呼應了我們在hw4-6中的Neural Network裡依照生活經驗選擇輸入的三個X-data : 車流、紅綠燈能左轉之個數與車道數。同時，我們也發現π1平方之後就是流體裡的pressure coefficient (Cp)，而Cp又是在描述一個流體裡的Static pressure 與 Dynamic pressure 的關係，就像在一段路上，若紅綠燈提供壓力阻止車子前進，而車子在沒有阻礙的情況下會很自然地想往前，那車子最後前進的速度就會跟紅綠燈有關了。
 <div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/CP.PNG"/></div>
 <br />由於其中的理論很複雜，難以進行分析得到解析解，因此我們將π1(含有速度項)對不同的π作圖，並求其相關係數，來得道我們預期的車速與其他參數間的關係。因為π2是車道數，不連續，因此我們只和π3、π4作圖，希望能透過運算讓不同π之間是接近線性的，以提高之後預測的準確度。
+
 ![image](https://github.com/shiny880410/helloworld/blob/master/final/p1p3.PNG){:height="50%" width="50%"}
 ![image](https://github.com/shiny880410/helloworld/blob/master/final/p1sp3.PNG)
 ![image](https://github.com/shiny880410/helloworld/blob/master/final/p1p4.PNG)
