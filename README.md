@@ -130,7 +130,7 @@ to make variables forms a column, and the observation in the same time forms a r
 ### 利用 Neural Network 預測車速
 * 找出與車速有關的參數 
 <br />在進入分析之前，我們也上網看了許多交通分析的資料，發現一個道路的交通狀況可以用巨觀、中觀、微觀的方法進行分析。其中，巨觀的方式著重流量、密度及速率間的關係，主要分析某一段時間內或某一路段內之車流總量或平均的總體行為，較符合我們的分析方式，因此我們也先分別將資料進行作圖並與理論比較。(分別看是符合單一階段車流模式還是多階段車流模式)
-![image](數據與理論圖們)
+![image](數據與理論圖們)(補圖片)
 <br />從圖中我可以發現，我們的資料和理論有差異，我們推論是因為理論是在描述比較理想的情況，例如沒有考慮路口、轉彎車、車道縮減等等實際道路上的狀況，因此我們試圖從另一個角度進行分析，以選定放入Neural Network的 X-train data 。我們需要找出主要影響車速變化的重要參數，但由於道路性質複雜難以以理論滿足，經過討論之後，我們將其想像成二維平板流進行分析，並列出下列物理量，探討其是否適用流體性質。
 <div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/plate.PNG"/></div>
 <div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/pic.PNG"/></div>		       
@@ -145,10 +145,10 @@ to make variables forms a column, and the observation in the same time forms a r
 <div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/pis.gif"/></div>
 <br />由上面結果可以發現，速度和體積流率、黏滯係數、平板間距有關，呼應了我們在hw4-6中的Neural Network裡依照生活經驗選擇輸入的三個X-data : 車流、紅綠燈能左轉之個數與車道數。同時，我們也發現π1平方之後就是流體裡的pressure coefficient (Cp)，而Cp又是在描述一個流體裡的Static pressure 與 Dynamic pressure 的關係，就像在一段路上，若紅綠燈提供壓力阻止車子前進，而車子在沒有阻礙的情況下會很自然地想往前，那車子最後前進的速度就會跟紅綠燈有關了。
 <div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/CP.PNG"/></div>
-<br />由於其中的理論很複雜，難以進行分析得到解析解，因此我們將π1(含有速度項)對不同的π作圖，並求其相關係數，來得道我們預期的車速與其他參數間的關係。因為π2是車道數，不連續，因此我們只和π3、π4作圖，希望能透過運算讓不同π之間是接近線性的，以提高之後預測的準確度。
+<br />由於其中的理論很複雜，難以進行分析得到解析解，因此我們將π1(含有速度項)對不同的π作圖，並求其相關係數，來得道我們預期的車速與其他參數間的關係。因為π2是車道數，不連續，因此我們只和π3、π4作圖，希望能透過運算讓不同π之間是接近線性的，以提高之後預測的準確度。π1和π3之間，代表速度與流量之間的關係，由於從理論可以知道速度與密度是線性關係，且密度與流量呈二次曲線，所以速率與流量也應呈拋物線，我們將π3開根號之後，得到與π1線性相關，且相關係數為0.86。
 <div align="center"><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/p1p3.PNG"/><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/p1sp3.PNG"/></div>
 <div align="center"><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/p1p4.PNG"/><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/p1sp4.PNG"/></div>
-<br />(補充相關係數)
+<br />(補pi4)
 <br />接著我們將資料丟入Neural Network進行訓練，並以 π2, π3, π4為輸入預測 π1，再由 π1換出車速。
 
 ### 分析A1與A2交通事故原因並比較
