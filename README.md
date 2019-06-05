@@ -129,9 +129,10 @@ to make variables forms a column, and the observation in the same time forms a r
 ## **期末專題 : 車流車速分析與預測**
 ### 利用 Neural Network 預測車速
 * 爬資料與資料清洗
-<br />經過討論，我們的期末專題所需要的數據不只車流車速，然而為了保持時間軸的一致性，我們重新由台北市政府資料開放平台抓取資料。較特別的是因為我們發現測站會隨著時間不同而有開啟或關閉等狀態改變，導致在政府網頁上並非依照固定欄位呈現，因此我們調整抓取資料的方式，先判別測站名稱再抓資料，以確保資料的正確性。 [台北市政府資料開放平台](https://data.taipei/dataset/detail/preview?id=b5aaf33a-a6dc-4836-bce6-09986241fe11&rid=8a2ea001-f483-4441-a458-af697653296c)/[code](https://script.google.com/d/MoFMifnPZJWSCCY-qUiHSjPRWp2vJfyNW/edit?mid=ACjPJvERJyEGyupYcceMP2zgbi-XBuoeIsc0jfoRDNc5MlD6BwZz1y98hUQGoXpna_Td5fKbbZpZ7mjLOxd_ttiI0JYeVDz0v2bUWugd56YlQ25FS8iYvWkyBGtfK9-uGZXbtfreI9hibGE&uiv=2)[程式碼](https://script.google.com/d/MkB5D-mxRFlsVQUA70Tq1n_RWp2vJfyNW/edit?mid=ACjPJvGNqDEAWEKcgpe9iFvj8Rk_xubtqxJCBUQo6A3zcncTWhsvwpewYuxSAtNAp5aKHzhZfnKixDrrCV2H79caQT1OVHsvXbiEnAMzPRyhTzO35Brrj5v5YyvEq-HVmlyYtDPX6Ltkdls&uiv=2)
-<br />我們將動態資料爬下來，包括車流、車速、車道佔有率。[原始數據_工作頁speeddata/occdata/voldata](https://docs.google.com/spreadsheets/d/1ACNaFULWc7k1iO9GCjpcKbu3RB0O81z2xHdDfjymZeM/edit?usp=sharing)接著將其每個對應站點所抓取的動態資料結合靜態資料，例如長度、車道數、紅綠燈數等，成為新的一筆完整資料以利分析。(工作頁data)
-<br />最後將整理好的數據一併排到新的試算表，準備進行之後的運算。[TrainingData](https://docs.google.com/spreadsheets/d/1_L_CG5WhF5oZUvpmJTWEbEmHHGJ1-boQ9oxyfILFJyU/edit?usp=sharing)
+<br />經過討論，我們的期末專題所需要的數據不只車流車速，然而為了保持時間軸的一致性，我們重新由台北市政府資料開放平台抓取資料。較特別的是因為我們發現測站會隨著時間不同而有開啟或關閉等狀態改變，導致在政府網頁上並非依照固定欄位呈現，因此我們調整抓取資料的方式，先判別測站名稱再抓資料，以確保資料的正確性。 [(台北市政府資料開放平台](https://data.taipei/dataset/detail/preview?id=b5aaf33a-a6dc-4836-bce6-09986241fe11&rid=8a2ea001-f483-4441-a458-af697653296c)/[程式碼)](https://script.google.com/d/MkB5D-mxRFlsVQUA70Tq1n_RWp2vJfyNW/edit?mid=ACjPJvGNqDEAWEKcgpe9iFvj8Rk_xubtqxJCBUQo6A3zcncTWhsvwpewYuxSAtNAp5aKHzhZfnKixDrrCV2H79caQT1OVHsvXbiEnAMzPRyhTzO35Brrj5v5YyvEq-HVmlyYtDPX6Ltkdls&uiv=2)
+<br />我們將動態資料爬下來，包括車流、車速、車道佔有率。[(原始數據_工作頁speeddata/occdata/voldata)](https://docs.google.com/spreadsheets/d/1ACNaFULWc7k1iO9GCjpcKbu3RB0O81z2xHdDfjymZeM/edit?usp=sharing)
+<br />接著將其每個對應站點所抓取的動態資料結合靜態資料，例如長度、車道數、紅綠燈數等，成為新的一筆完整資料以利分析。(工作頁data)
+<br />最後將整理好的數據一併排到新的試算表，準備進行之後的運算。[(TrainingData)](https://docs.google.com/spreadsheets/d/1_L_CG5WhF5oZUvpmJTWEbEmHHGJ1-boQ9oxyfILFJyU/edit?usp=sharing)
 * 找出與車速有關的參數 
 <br />在進入分析之前，我們也上網看了許多交通分析的資料，發現一個道路的交通狀況可以用巨觀、中觀、微觀的方法進行分析。其中，巨觀的方式著重流量、密度及速率間的關係，主要分析某一段時間內或某一路段內之車流總量或平均的總體行為，較符合我們的分析方式，因此我們也先分別將資料進行作圖並與理論比較。(分別看是符合單一階段車流模式還是多階段車流模式)
 ![image](數據與理論圖們)(補圖片)
@@ -153,8 +154,9 @@ to make variables forms a column, and the observation in the same time forms a r
 <div align="center"><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/p1p3.PNG"/><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/p1sp3.PNG"/></div>
 <div align="center"><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/p1p4.PNG"/><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/p1sp4.PNG"/></div>
 <br />(補pi4)
-<br />接著我們將資料丟入Neural Network進行訓練，並以 π2, π3, π4為輸入預測 π1，再由 π1換出車速。[(Neural network_final_1)](https://github.com/shiny880410/helloworld/blob/master/final/final_nw.ipynb)
+<br />接著我們將資料丟入Neural Network進行訓練，並以 π2, π3, π4為輸入預測 π1，再由 π1換出車速。[(NeuralNetwork_final_1)](https://github.com/shiny880410/helloworld/blob/master/final/final_nw.ipynb)
 <br />我們嘗試透過不同方法調整輸入值讓預測進步。(補pi4新數據)
+
 ### 分析A1與A2交通事故原因並比較
 * 在hw4-6中，我們針對A1交通事故(當場或二十四小時內死亡之交通事故)進行相關性分析並得到和A1交通事故相關的原因。在期末專題中，我們進一步依照同樣方法分析A2交通事故資料並比較。[(A2車禍事故明細分析)]()
 
