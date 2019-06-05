@@ -143,7 +143,7 @@ to make variables forms a column, and the observation in the same time forms a r
 <br />並得到無因次的π1與其他π之間的關係 :
 <br />
 <div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/pis.gif"/></div>
-<br />由上面結果可以發現，速度和體積流率、黏滯係數、平板間距有關，呼應了我們在hw4-6中的Neural Network裡依照生活經驗選擇輸入的三個X-data : 車流、紅綠燈能左轉之個數與車道數。同時，我們也發現π1和流體裡的pressure coefficient(圖)有關，而Cp又是在描述一個流體裡的Static pressure 與 Dynamic pressure 的關係，就像在一段路上，若紅綠燈提供壓力阻止車子前進，而車子在沒有阻礙的情況下會很自然地想往前，那車子最後前進的速度就會跟紅綠燈有關了。雖然由於其中的理論很複雜，難以進行分析得到解析解，但是我們仍能將π1(含有速度項)對不同的π作圖，並求其相關係數。
+<br />由上面結果可以發現，速度和體積流率、黏滯係數、平板間距有關，呼應了我們在hw4-6中的Neural Network裡依照生活經驗選擇輸入的三個X-data : 車流、紅綠燈能左轉之個數與車道數。同時，我們也發現π1和流體裡的pressure coefficient ![image](https://github.com/shiny880410/helloworld/blob/master/final/CP.PNG) 有關，而Cp又是在描述一個流體裡的Static pressure 與 Dynamic pressure 的關係，就像在一段路上，若紅綠燈提供壓力阻止車子前進，而車子在沒有阻礙的情況下會很自然地想往前，那車子最後前進的速度就會跟紅綠燈有關了。雖然由於其中的理論很複雜，難以進行分析得到解析解，但是我們仍能將π1(含有速度項)對不同的π作圖，並求其相關係數。
 
 ### 分析A1與A2交通事故原因並比較
 * 在hw4-6中，我們針對A1交通事故(當場或二十四小時內死亡之交通事故)進行相關性分析並得到和A1交通事故相關的原因。在期末專題中，我們進一步依照同樣方法分析A2交通事故資料並比較。[(A2車禍事故明細分析)]()
