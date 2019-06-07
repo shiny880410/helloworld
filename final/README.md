@@ -21,7 +21,7 @@
 		<div align=center><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/%E5%AF%86%E5%BA%A6-%E9%80%9F%E7%8E%87.png"/></div>
 		<div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/files/%E6%B5%81%E9%87%8F-%E5%AF%86%E5%BA%A6.png"/></div>	
 		<br />由上圖可以看到我們的數據跟理論還是有蠻大的落差，因我們希望能換個角度思考。
-	* 用流體力學觀點加入**黏滯係數**進行討論
+	* 用流體力學觀點加入**黏滯係數**與**壓力差**進行討論
 		<br />從圖中我可以發現，我們的資料和理論有差異，我們推論是因為理論是在描述比較理想的情況，例如沒有考慮路口、轉彎車、車道縮減等等實際道路上的狀況，因此我們試圖從另一個角度進行分析，以選定放入Neural Network的 X-train data 。我們需要找出主要影響車速變化的重要參數，但由於道路性質複雜難以以理論滿足，經過討論之後，我們將其想像成二維平板流進行分析，並列出下列物理量，探討其是否適用流體性質。
 		<div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/files/plate.PNG"/></div>
 		<div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/files/pic.PNG"/></div>		       
