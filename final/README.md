@@ -70,13 +70,13 @@
 	* A2交通事故
 	<br />我們依照上述方法對分組過後的A2交通事故進行分析。
 	<br />**忠孝東路**
-	<div align=center><img width="400" height="400"  src="https://github.com/shiny880410/helloworld/blob/master/final/files/Zhongxiao.png"/></div>
+		<div align=center><img width="800" height="800"  src="https://github.com/shiny880410/helloworld/blob/master/final/files/Zhongxiao.png"/></div>
 	<br />結論
 	<br />**市民大道**
-	<div align=center><img width="400" height="400"  src="https://github.com/shiny880410/helloworld/blob/master/final/files/ShiMin.png"/></div>
+		<div align=center><img width="800" height="800"  src="https://github.com/shiny880410/helloworld/blob/master/final/files/ShiMin.png"/></div>
 	<br />結論
 	<br />**復興路**
-	<div align=center><img width="400" height="400"  src="https://github.com/shiny880410/helloworld/blob/master/final/files/Fuxing.png"/></div>
+		<div align=center><img width="800" height="800"  src="https://github.com/shiny880410/helloworld/blob/master/final/files/Fuxing.png"/></div>
 	<br />結論
 
 
