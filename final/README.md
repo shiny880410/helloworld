@@ -2,7 +2,7 @@
 ## 透過規劃道路使交通更順暢_利用 Neural Network 預測車速
 * 網路爬蟲抓取資料
 	* 由臺北市政府資料開放平台抓取資料
-	<br />經過討論，我們的期末專題所需要的數據不只車流車速，然而為了保持時間軸的一致性，我們重新抓取資料。較特別的是因為我們發現測站會隨著時間不同而有開啟或關閉等狀態改變，導致在政府網頁上並非依照固定欄位呈現，因此我們調整抓取資料的方式，先判別測站名稱再抓資料，以確保資料的正確性。 [(台北市政府資料開放平台](https://data.taipei/#/dataset/detail?id=b5aaf33a-a6dc-4836-bce6-09986241fe11)/[程式碼)](https://script.google.com/d/MkB5D-mxRFlsVQUA70Tq1n_RWp2vJfyNW/edit?mid=ACjPJvGNqDEAWEKcgpe9iFvj8Rk_xubtqxJCBUQo6A3zcncTWhsvwpewYuxSAtNAp5aKHzhZfnKixDrrCV2H79caQT1OVHsvXbiEnAMzPRyhTzO35Brrj5v5YyvEq-HVmlyYtDPX6Ltkdls&uiv=2)
+	<br />經過討論，我們的期末專題所需要的數據不只車流車速，然而為了保持時間軸的一致性，我們重新抓取資料。較特別的是因為我們發現測站會隨著時間不同而有開啟或關閉等狀態改變，導致在政府網頁上並非依照固定欄位呈現，因此我們調整抓取資料的方式，先判別測站名稱再抓資料，以確保資料的正確性。 [(臺北市政府資料開放平台)](https://data.taipei/#/dataset/detail?id=b5aaf33a-a6dc-4836-bce6-09986241fe11)/[程式碼)](https://script.google.com/d/MkB5D-mxRFlsVQUA70Tq1n_RWp2vJfyNW/edit?mid=ACjPJvGNqDEAWEKcgpe9iFvj8Rk_xubtqxJCBUQo6A3zcncTWhsvwpewYuxSAtNAp5aKHzhZfnKixDrrCV2H79caQT1OVHsvXbiEnAMzPRyhTzO35Brrj5v5YyvEq-HVmlyYtDPX6Ltkdls&uiv=2)
 	* 抓下來的動態資料原始數據
 	<br />我們將動態資料爬下來，包括車流、車速、車道佔有率。[(原始數據_工作頁speeddata/occdata/voldata)](https://docs.google.com/spreadsheets/d/1ACNaFULWc7k1iO9GCjpcKbu3RB0O81z2xHdDfjymZeM/edit?usp=sharing)
 	* 用Google map查看站點靜態資料
@@ -45,7 +45,24 @@
 * 我們嘗試透過不同方法調整輸入值讓預測進步。(補pi4新數據)
 
 ## 降低死亡車禍率_分析A1與A2交通事故原因並比較
-
+* 下載與取得資料
+	* 由臺北市政府資料開放平台下載 107年度A1及A2類交通事故明細、事故代碼對照表[(臺北市政府資料開放平台)](https://data.taipei/#/dataset/detail?id=2f238b4f-1b27-4085-93e9-d684ef0e2735)
+	<br />A1指造成人員當場或二十四小時內死亡之交通事故；A2指造成人員受傷或超過二十四小時死亡之交通事故。
+	* 由內政資料開放平台下載全國路名資料[(內政資料開放平台)](https://data.moi.gov.tw/MoiOD/data/DataDetail.aspx?oid=E2EDC47D-2D3F-4EB1-878A-4DEB6160FD4C)
+	<br />我們想得知臺北市所有道路名稱以利後續對龐大的交通事故數分類。
+* 整理資料成適合分析的格式
+	* 將資料裡的代碼依照對照表換成文字[(工作頁_Data3)](https://docs.google.com/spreadsheets/d/1A3V6ncj7VLNDiDkchaYPIYmqrA0trkEj8L-tHoaAyZs/edit?usp=sharing)
+	<br />由於原始資料是將對撞的交通事故分為兩起案件紀錄(即為每一車留下一筆紀錄)，不方便我們分析，故我們以時間軸將同一場車禍資料合併，才能發現車禍與車禍之間的相關性，例如對撞車種之間的關聯性等等。另外，為了不讓資料遺失，我們將"死亡"字串出現在文本的次數，代替每起案件的死亡人數(受傷者亦同)，並以文字以十歲為區間代替年齡，讓數字資料只剩下車速以利判讀。
+	* 將臺北市各路段依照A2交通事故發生頻率排列
+	<br />
+	* 將我們所關心的關鍵字詞列出來，並觀察彼此交互在文本(不同場車禍)之間出現的次數，最後將矩陣降維呈現，從圖中可以看出名詞之間的相關性。[(A1車禍事故明細分析)](https://github.com/shiny880410/helloworld/blob/master/hw4-6/PCA2.ipynb)
+* 結論一 :  從最後所畫成的圖表，我們可以發現死亡車禍確實有和許多特定的詞彙相關，而這也對應到了特定的族群、車種、環境與道路型態。而從這些訊息可以提供相關單位改善道路的方向與進行有效的宣導或臨檢。
+	* 我們可以發現以台北市而言，機車是與死亡車禍高度相關的車種之一，再進而參照文本內事發路段，可得知臺北市對外縣市交界的機車道是需要改善的重點道路之一。
+	* 50km/hr明顯相較於低時速顯著，因此推論死亡車禍在事發當時車速普遍較高，而另一方面我們也可以發現快車道較慢車道與死亡關聯性更高。
+	* 男性較女性更傾向以高速行駛，二十到三十歲是發生事故的主要年齡層，因此可有效的局部加強宣導相關道路安全觀念。
+	* 晴天也十分容易發生死亡車禍，因此推估天氣對事故發生影響有限。 
+	* 行人易在交叉路口附近發生車禍，因此有關的交通標誌可能要進行改善。
+![image](https://github.com/shiny880410/helloworld/blob/master/hw4-6/q2.PNG)
 * 在hw4-6中，我們針對A1交通事故(當場或二十四小時內死亡之交通事故)進行相關性分析並得到和A1交通事故相關的原因。在期末專題中，我們進一步依照同樣方法分析A2交通事故資料並比較。[(A2車禍事故明細分析)](https://github.com/shiny880410/helloworld/blob/master/final/files/PCA3.ipynb)
 <br />(補分組)
 
