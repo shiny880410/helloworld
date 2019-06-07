@@ -23,18 +23,18 @@
 <div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/files/pic.PNG"/></div>		       
 	<br />其中，我們假設紅綠燈數為控制車流前進的壓力梯度，且路口左轉之車流待轉時會減速至幾乎靜止，和邊界無滑動之流體相互對應。而密度則是以車道佔有率(特定時間內一小路段被車輛佔據的時間百分比)表示，因為兩者呈正比。
 	* 利用 Buckingham Pi Theorem 進行無因次化
-	<br />我們有7個物理量，而這些物理量共有3個獨立的因次，則原方程式可以寫成由4個無因次的參數 π1, π2, π3, π4組成的方程式，而這些無因次的參數是由原方程式中的物理量所組成。這個方法讓我們就算不用理論找出參數間確切的方程式也能找出其中和我們關心的車速相關的物理量，是較經濟也較方便的做法。在選取repeating variables時，因為是要找和速度的關聯性，因此要避開速度項，並分別由幾何形狀、流體性質、動力學三個方面選取獨立的參數，因此在這裡我們選擇了ρ、D、ΔP，並得到下列 π 項。
+		<br />我們有7個物理量，而這些物理量共有3個獨立的因次，則原方程式可以寫成由4個無因次的參數 π1, π2, π3, π4組成的方程式，而這些無因次的參數是由原方程式中的物理量所組成。這個方法讓我們就算不用理論找出參數間確切的方程式也能找出其中和我們關心的車速相關的物理量，是較經濟也較方便的做法。在選取repeating variables時，因為是要找和速度的關聯性，因此要避開速度項，並分別由幾何形狀、流體性質、動力學三個方面選取獨立的參數，因此在這裡我們選擇了ρ、D、ΔP，並得到下列 π 項。
 <div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/files/pi1.gif"/></div>
 <div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/files/pi2.gif"/></div>
 <div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/files/pi3.gif"/></div>
 <div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/files/pi4.gif"/></div>
-	<br />並得到無因次的π1與其他π之間的關係 :
-	<br />
+		<br />並得到無因次的π1與其他π之間的關係 :
+		<br />
 	<div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/files/pis.gif"/></div>
-	<br />由上面結果可以發現，速度和體積流率、黏滯係數、平板間距有關，呼應了我們在hw4-6中的Neural Network裡依照生活經驗選擇輸入的三個X-data : 車流、紅綠燈能左轉之個數與車道數。同時，我們也發現π1平方之後就是流體裡的pressure coefficient (Cp)，而Cp又是在描述一個流體裡的Static pressure 與 Dynamic pressure 的關係，就像在一段路上，若紅綠燈提供壓力阻止車子前進，而車子在沒有阻礙的情況下會很自然地想往前，那車子最後前進的速度就會跟紅綠燈有關了。
+		<br />由上面結果可以發現，速度和體積流率、黏滯係數、平板間距有關，呼應了我們在hw4-6中的Neural Network裡依照生活經驗選擇輸入的三個X-data : 車流、紅綠燈能左轉之個數與車道數。同時，我們也發現π1平方之後就是流體裡的pressure coefficient (Cp)，而Cp又是在描述一個流體裡的Static pressure 與 Dynamic pressure 的關係，就像在一段路上，若紅綠燈提供壓力阻止車子前進，而車子在沒有阻礙的情況下會很自然地想往前，那車子最後前進的速度就會跟紅綠燈有關了。
 	<div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/files/CP.PNG"/></div>
 	* 作圖並找相關係數
-	<br />由於其中的理論很複雜，難以進行分析得到解析解，因此我們將π1(含有速度項)對不同的π作圖，並求其相關係數，來得道我們預期的車速與其他參數間的關係。因為π2是車道數，不連續，因此我們只和π3、π4作圖，希望能透過運算讓不同π之間是接近線性的，以提高之後預測的準確度。π1和π3之間，代表速度與流量之間的關係，由於從理論可以知道速度與密度是線性關係，且密度與流量呈二次曲線，所以速率與流量也應呈拋物線，我們將π3開根號之後，得到與π1線性相關，且相關係數為0.86。
+		<br />由於其中的理論很複雜，難以進行分析得到解析解，因此我們將π1(含有速度項)對不同的π作圖，並求其相關係數，來得道我們預期的車速與其他參數間的關係。因為π2是車道數，不連續，因此我們只和π3、π4作圖，希望能透過運算讓不同π之間是接近線性的，以提高之後預測的準確度。π1和π3之間，代表速度與流量之間的關係，由於從理論可以知道速度與密度是線性關係，且密度與流量呈二次曲線，所以速率與流量也應呈拋物線，我們將π3開根號之後，得到與π1線性相關，且相關係數為0.86。
 	<div align="center"><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/p1p3.PNG"/><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/p1sp3.PNG"/></div>
 	<div align="center"><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/p1p4.PNG"/><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/p1sp4.PNG"/></div>
 	<br />(補pi4)
