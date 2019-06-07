@@ -16,7 +16,7 @@
 	* 瀏覽交通相關文章
 	<br />在進入分析之前，我們也上網看了許多交通分析的資料，發現一個道路的交通狀況可以用巨觀、中觀、微觀的方法進行分析。其中，巨觀的方式著重流量、密度及速率間的關係，主要分析某一段時間內或某一路段內之車流總量或平均的總體行為，較符合我們的分析方式，因此我們也先分別將資料進行作圖並與理論比較。
 	* 多階段車流模式
-	<br />巨觀分析又分為兩個模式，單一與多階段車流模式。多階段車流模式為車流行為在自由車流與擁擠車流狀態時候，因為表現不同，所以利用多條函數關係描述不同交通狀態。我們將流量、密度及速率作圖並與理論曲線比較，如下圖 :(補程式碼)
+	<br />巨觀分析又分為兩個模式，單一與多階段車流模式。多階段車流模式為車流行為在自由車流與擁擠車流狀態時候，因為表現不同，所以利用多條函數關係描述不同交通狀態。我們將流量、密度及速率作圖並與理論曲線比較，如下圖 : [(程式碼)](https://github.com/shiny880410/helloworld/blob/master/final/files/%E6%95%A3%E4%BD%88%E5%9C%96.ipynb)
 		<div align=center><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/%E5%AF%86%E5%BA%A6-%E6%B5%81%E9%87%8F.png"/></div>
 		<div align=center><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/%E5%AF%86%E5%BA%A6-%E9%80%9F%E7%8E%87.png"/></div>
 		<div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/files/%E6%B5%81%E9%87%8F-%E5%AF%86%E5%BA%A6.png"/></div>	
