@@ -47,7 +47,7 @@
 	<br />(如何選節點，training history 跟之前比較準確率大幅提升 如何設計節點數)
 	* 調整batch size
 	<br />原本設定800，預測出的資料準確度標準差較大，降低batch size至500後，整體準確率雖然下降，但讓預測結果較一致。
-	* 讓過程自動化 [(程式碼)](https://github.com/shiny880410/helloworld/blob/master/final/downloadcsv.ipynb)
+	* 讓過程自動化 [(程式碼)](https://github.com/shiny880410/helloworld/blob/master/final/files/downloadcsv.ipynb)
 	<br />在每次training前，都要將整理好的數據再分別存成要train的數據以及要用來預測的數據。再train過很多次之後，我們覺得其中的過程耗時又繁瑣，當資料量大時就會容易出錯，因此我們到後期讓雲端試算表中的資料分別自動存成要訓練的csv檔與用來預測的csv檔，並在存完之後自動上傳至雲端，讓我們只需要複製連結至程式碼中，就可以進行training，並在結束之後將模型保存下來。
 * 提升準確率
 * 我們嘗試透過不同方法調整輸入值讓預測進步。(補pi4新數據)
