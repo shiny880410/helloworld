@@ -16,7 +16,7 @@
 	* 瀏覽交通相關文章
 	<br />在進入分析之前，我們也上網看了許多交通分析的資料，發現一個道路的交通狀況可以用巨觀、中觀、微觀的方法進行分析。其中，巨觀的方式著重流量、密度及速率間的關係，主要分析某一段時間內或某一路段內之車流總量或平均的總體行為，較符合我們的分析方式，因此我們也先分別將資料進行作圖並與理論比較。
 	* 多階段車流模式
-	<br />巨觀分析又分為兩個模式，單一與多階段車流模式。多階段車流模式為車流行為在自由車流與擁擠車流狀態時候，因為表現不同，所以利用多條函數關係描述不同交通狀態。我們將流量、密度及速率作圖並與理論曲線比較，如下圖 :
+	<br />巨觀分析又分為兩個模式，單一與多階段車流模式。多階段車流模式為車流行為在自由車流與擁擠車流狀態時候，因為表現不同，所以利用多條函數關係描述不同交通狀態。我們將流量、密度及速率作圖並與理論曲線比較，如下圖 :(補程式碼)
 		<div align=center><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/%E5%AF%86%E5%BA%A6-%E6%B5%81%E9%87%8F.png"/></div>
 		<div align=center><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/%E5%AF%86%E5%BA%A6-%E9%80%9F%E7%8E%87.png"/></div>
 		<div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/files/%E6%B5%81%E9%87%8F-%E5%AF%86%E5%BA%A6.png"/></div>	
@@ -38,13 +38,17 @@
 		<br />由上面結果可以發現，速度和**體積流率**、**黏滯係數**、**平板間距**有關，呼應了我們在hw4-6中的Neural Network裡依照生活經驗選擇輸入的三個X-data : 車流、紅綠燈能左轉之個數與車道數。同時，我們也發現π1平方之後就是流體裡的pressure coefficient (Cp)，而Cp又是在描述一個流體裡的Static pressure 與 Dynamic pressure 的關係，就像在一段路上，若紅綠燈提供壓力阻止車子前進，而車子在沒有阻礙的情況下會很自然地想往前，那車子最後前進的速度就會跟紅綠燈有關了。
 		<div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/files/CP.PNG"/></div>
 	* 作圖並找相關係數
-		<br />由於其中的理論很複雜，難以進行分析得到解析解，因此我們將π1(含有速度項)對不同的π作圖，並求其相關係數，來得道我們預期的車速與其他參數間的關係。因為π2是車道數，不連續，因此我們只和π3、π4作圖，希望能透過運算讓不同π之間是接近線性的，以提高之後預測的準確度。π1和π3之間，代表速度與流量之間的關係，由於從理論可以知道速度與密度是線性關係，且密度與流量呈二次曲線，所以速率與流量也應呈拋物線，我們將π3開根號之後，得到與π1線性相關，且相關係數為0.86。
+		<br />由於其中的理論很複雜，難以進行分析得到解析解，因此我們將π1(含有速度項)對不同的π作圖，並求其相關係數，來得道我們預期的車速與其他參數間的關係。因為π2是車道數，不連續，因此我們只和π3、π4作圖，希望能透過運算讓不同π之間是接近線性的，以提高之後預測的準確度。π1和π3之間，代表速度與流量之間的關係，由於從理論可以知道速度與密度是線性關係，且密度與流量呈二次曲線，所以速率與流量也應呈拋物線，我們將π3開根號之後，得到與π1線性相關，且相關係數為0.86。而我們最後透過反覆嘗試，將π4倒數開根號，並得到相關係數(補)。
 		<div align="center"><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/pi3-pi1.png"/><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/sqrt_pi3-pi1.png"/></div>
 		<div align="center"><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/pi4-pi1.png"/><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/sqrt_pi4^-1-pi1.png"/></div>
-		<br />(補pi4)
 * 將資料放入Neural Network進行訓練
-	* (倒數等等:我們以 π2, π3, π4為輸入預測 π1，再由 π1換出車速。)[(Neurai network final_1)](https://github.com/shiny880410/helloworld/blob/master/final/files/final_nw.ipynb)
-	<br />(training history 跟之前比較準確率大幅提升 如何設計節點數)
+	* 放入變換後的資料進行訓練
+	<br />(倒數等等:我們以 π2, π3, π4為輸入預測 π1，再由 π1換出車速。)[(Neurai network final_1)](https://github.com/shiny880410/helloworld/blob/master/final/files/final_nw.ipynb)
+	<br />(如何選節點，training history 跟之前比較準確率大幅提升 如何設計節點數)
+	* 調整batch size
+	<br />原本設定800，預測出的資料準確度標準差較大，降低batch size至500後，整體準確率雖然下降，但讓預測結果較一致。
+	* 讓過程自動化 [(程式碼)](https://github.com/shiny880410/helloworld/blob/master/final/downloadcsv.ipynb)
+	<br />在每次training前，都要將整理好的數據再分別存成要train的數據以及要用來預測的數據。再train過很多次之後，我們覺得其中的過程耗時又繁瑣，當資料量大時就會容易出錯，因此我們到後期讓雲端試算表中的資料分別自動存成要訓練的csv檔與用來預測的csv檔，並在存完之後自動上傳至雲端，讓我們只需要複製連結至程式碼中，就可以進行training，並在結束之後將模型保存下來。
 * 提升準確率
 * 我們嘗試透過不同方法調整輸入值讓預測進步。(補pi4新數據)
 
@@ -58,7 +62,7 @@
 	* 將資料裡的代碼依照對照表換成文字[(工作頁_Data3)](https://docs.google.com/spreadsheets/d/1A3V6ncj7VLNDiDkchaYPIYmqrA0trkEj8L-tHoaAyZs/edit?usp=sharing)
 	<br />由於原始資料是將對撞的交通事故分為兩起案件紀錄(即為每一車留下一筆紀錄)，不方便我們分析，故我們以時間軸將同一場車禍資料合併，才能發現車禍與車禍之間的相關性，例如對撞車種之間的關聯性等等。另外，為了不讓資料遺失，我們將"死亡"字串出現在文本的次數，代替每起案件的死亡人數(受傷者亦同)，並以文字以十歲為區間代替年齡，讓數字資料只剩下車速以利判讀。
 	* 將臺北市各路段依照A2交通事故發生頻率排列
-	<br />因為A2交通事故高達兩萬多筆，相較於A1七十四筆數量多很多，因此不利直接進行共現性分析，所以我們將其依照路段發生事故的頻率列出，找出最常發生事故之路段。
+	<br />因為A2交通事故高達兩萬多筆，相較於A1七十四筆數量多很多，因此不利直接進行共現性分析，所以我們將其依照路段發生事故的頻率列出，找出最常發生事故之路段。(補程式碼)
 	<div align=center><img  src="圖"/></div>
 	<br />由上圖可知，忠孝東路位居第一，市民大道位居第二，在A2交通事故中，我們以忠孝東路、市民大道與復興路進行分析。
 * 進行共現性分析與呈現
