@@ -79,13 +79,18 @@
 	<br />我們依照上述方法對分組過後的A2交通事故進行分析。
 	<br />**忠孝東路**
 		<div align=center><img width="600" height="600"  src="https://github.com/shiny880410/helloworld/blob/master/final/files/Zhongxiao.png"/></div>
-	<br />結論
 	<br />**市民大道**
 		<div align=center><img width="600" height="600"  src="https://github.com/shiny880410/helloworld/blob/master/final/files/ShiMin.png"/></div>
-	<br />結論
 	<br />**復興路**
 		<div align=center><img width="600" height="600"  src="https://github.com/shiny880410/helloworld/blob/master/final/files/Fuxing.png"/></div>
-	<br />結論
+	<br />由結果來看，我們可以發現一些A2交通事故共同享有的特徵 :
+		* 機車
+		* 時速高
+		* 年輕族群
+		* 男性發生事故次數多於女性，
+		* 忠孝多了自小客車
+	<br />另外，忠孝東路與市民大道分別為臺北市發生事故次數前兩名的路段，除了道路較長、為重要幹道之外，我們可以藉由與同樣是重要道路的復興路相比，發現他們較復興路多了交叉路口與四岔路等較為複雜的道路型態，且他們與受傷的共現性也較單純的路段多，因此我們應重視路口安全與道路規劃。
+* A1事故與A2事故比較
 
 
 
