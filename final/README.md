@@ -62,7 +62,7 @@
 	* 將資料裡的代碼依照對照表換成文字[(工作頁_Data3)](https://docs.google.com/spreadsheets/d/1A3V6ncj7VLNDiDkchaYPIYmqrA0trkEj8L-tHoaAyZs/edit?usp=sharing)
 	<br />由於原始資料是將對撞的交通事故分為兩起案件紀錄(即為每一車留下一筆紀錄)，不方便我們分析，故我們以時間軸將同一場車禍資料合併，才能發現車禍與車禍之間的相關性，例如對撞車種之間的關聯性等等。另外，為了不讓資料遺失，我們將"死亡"字串出現在文本的次數，代替每起案件的死亡人數(受傷者亦同)，並以文字以十歲為區間代替年齡，讓數字資料只剩下車速以利判讀。
 	* 將臺北市各路段依照A2交通事故發生頻率排列
-	<br />因為A2交通事故高達兩萬多筆，相較於A1七十四筆數量多很多，因此不利直接進行共現性分析，所以我們將其依照路段發生事故的頻率列出，找出最常發生事故之路段。(補程式碼)
+	<br />因為A2交通事故高達兩萬多筆，相較於A1七十四筆數量多很多，因此不利直接進行共現性分析，所以我們將其依照路段發生事故的頻率列出，找出最常發生事故之路段。 [(程式碼)](https://github.com/shiny880410/helloworld/blob/master/final/files/%E9%95%B7%E6%A2%9D%E5%9C%96.ipynb)
 	<div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/files/bar.png"/></div>
 	<br />由上圖可知，忠孝東路位居第一，市民大道位居第二，在A2交通事故中，我們以忠孝東路、市民大道與復興路進行分析。
 * 進行共現性分析與呈現
@@ -77,11 +77,11 @@
 		![image](https://github.com/shiny880410/helloworld/blob/master/hw4-6/q2.PNG)
 	* A2交通事故
 	<br />我們依照上述方法對分組過後的A2交通事故進行分析。
-	<br />**忠孝東路**
+	<br />**忠孝東路** [(程式碼)](https://github.com/shiny880410/helloworld/blob/master/final/files/Zhongxiao.ipynb)
 		<div align=center><img width="600" height="600"  src="https://github.com/shiny880410/helloworld/blob/master/final/files/Zhongxiao.png"/></div>
-	<br />**市民大道**
+	<br />**市民大道** [(程式碼)](https://github.com/shiny880410/helloworld/blob/master/final/files/ShiMin.ipynb)
 		<div align=center><img width="600" height="600"  src="https://github.com/shiny880410/helloworld/blob/master/final/files/ShiMin.png"/></div>
-	<br />**復興路**
+	<br />**復興路** [(程式碼)](https://github.com/shiny880410/helloworld/blob/master/final/files/Fuxing.ipynb)
 		<div align=center><img width="600" height="600"  src="https://github.com/shiny880410/helloworld/blob/master/final/files/Fuxing.png"/></div>
 	<br />由結果來看，我們可以發現一些A2交通事故共同享有的特徵 :
 		* 機車
