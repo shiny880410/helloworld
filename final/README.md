@@ -68,11 +68,16 @@
 		* 行人易在交叉路口附近發生車禍，因此有關的交通標誌可能要進行改善。
 		![image](https://github.com/shiny880410/helloworld/blob/master/hw4-6/q2.PNG)
 	* A2交通事故
-		* 忠孝東路
-		* 市民大道
-		* 復興路
-* 在hw4-6中，我們針對A1交通事故(當場或二十四小時內死亡之交通事故)進行相關性分析並得到和A1交通事故相關的原因。在期末專題中，我們進一步依照同樣方法分析A2交通事故資料並比較。[(A2車禍事故明細分析)](https://github.com/shiny880410/helloworld/blob/master/final/files/PCA3.ipynb)
-<br />(補分組)
+	<br />我們依照上述方法對分組過後的A2交通事故進行分析。
+	<br />**忠孝東路**
+	<div align=center><img  src="圖"/></div>
+	<br />結論
+	<br />**市民大道**
+	<div align=center><img  src="圖"/></div>
+	<br />結論
+	<br />**復興路**
+	<div align=center><img  src="圖"/></div>
+	<br />結論
 
 
 
