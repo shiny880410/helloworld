@@ -52,12 +52,6 @@
 	* 
 <div align="center"><img width="400" height="400" src="https://github.com/shiny880410/helloworld/blob/master/final/files/speed_occ_lan.png"/><img width="400" height="400" src="https://github.com/shiny880410/helloworld/blob/master/final/files/speed_occ_left.png"/></div>
 <div align="center"><img width="400" height="400" src="https://github.com/shiny880410/helloworld/blob/master/final/files/speed_vol_lan.png"/><img width="400" height="400" src="https://github.com/shiny880410/helloworld/blob/master/final/files/speed_vol_left.png"/></div>
-	<div align=center><img  width="400" height="400" src="https://github.com/shiny880410/helloworld/blob/master/final/files/speed_occ_lan.png"/></div>
-	<div align=center><img  width="400" height="400" src="https://github.com/shiny880410/helloworld/blob/master/final/files/speed_occ_left.png"/></div>
-	<div align=center><img  width="400" height="400" src="https://github.com/shiny880410/helloworld/blob/master/final/files/speed_vol_lan.png"/></div>
-	<div align=center><img  width="400" height="400" src="https://github.com/shiny880410/helloworld/blob/master/final/files/speed_vol_left.png"/></div>
-
-
 ## 降低死亡車禍率_分析A1與A2交通事故原因並比較
 * 下載與取得資料
 	* 由臺北市政府資料開放平台下載 107年度A1及A2類交通事故明細、事故代碼對照表[(臺北市政府資料開放平台)](https://data.taipei/#/dataset/detail?id=2f238b4f-1b27-4085-93e9-d684ef0e2735)
