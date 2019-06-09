@@ -39,7 +39,7 @@
 	* 作圖並找相關係數
 		<br />由於其中的理論很複雜，難以進行分析得到解析解，因此我們將π1(含有速度項)對不同的π作圖，並求其相關係數，來得道我們預期的車速與其他參數間的關係。因為π2是車道數，不連續，因此我們只和π3、π4作圖，希望能透過運算讓不同π之間是接近線性的，以提高之後預測的準確度。π1和π3之間，代表速度與流量之間的關係，由於從理論可以知道速度與密度是線性關係，且密度與流量呈二次曲線，所以速率與流量也應呈拋物線，我們將π3開根號之後，得到與π1線性相關，且相關係數為0.86。而我們最後透過反覆嘗試，將π4倒數開根號，並發現圖形分支成許多斜率不同的直線。因此我們推論應該是由於我們所選用的對應道路性質並不是能最佳描述這個狀態的參數，不然應該會重合成一條線，但由於其中的線性關係依然成立，我們依然將其放入x-train data，並由NN依照差別進行預測。
 		<div align="center"><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/pi3-pi1.png"/><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/sqrt_pi3-pi1.png"/></div>
-		<div align="center"><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/pi4-pi1.png"/><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/sqrt_pi4^-1-pi1.png"/></div>
+		<div align="center"><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/pi4-pi1.png"/><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/sqrt_pi4^-1-pi12.png"/></div>
 * 將資料放入Neural Network進行訓練
 	* 讓過程自動化 [(程式碼)](https://github.com/shiny880410/helloworld/blob/master/final/files/downloadcsv.ipynb)
 	<br />由於在每次training前，都要將整理好的數據再分別存成要train的數據以及要用來預測的數據。經過上次hw4-6的training之後，我們覺得其中的過程耗時又繁瑣，當資料量大時就會容易出錯，因此我們到後期讓雲端試算表中的資料分別自動存成要訓練的csv檔與用來預測的csv檔，並在存完之後自動上傳至雲端，讓我們只需要將檔案下載至程式碼中，就可以進行training，並在結束之後將模型保存下來。
