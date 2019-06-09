@@ -33,9 +33,9 @@
 			<div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/files/pi4.gif"/></div>
 		<br />並得到無因次的π1與其他π之間的關係 :
 		<br />
-		<div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/files/pis.gif"/></div>
+			<div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/files/pis.gif"/></div>
 		<br />由上面結果可以發現，速度和**體積流率**、**黏滯係數**、**平板間距**有關，呼應了我們在hw4-6中的Neural Network裡依照生活經驗選擇輸入的三個X-data : 車流、紅綠燈能左轉之個數與車道數。同時，我們也發現π1平方之後就是流體裡的pressure coefficient (Cp)，而Cp又是在描述一個流體裡的Static pressure 與 Dynamic pressure 的關係，因此可以用來形容紅綠燈數目與車速之間相互影響的狀況與比例關係。
-		<div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/files/CP.PNG"/></div>
+			<div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/files/CP.PNG"/></div>
 	* 作圖並找相關係數
 		<br />由於其中的理論很複雜，難以進行分析得到解析解，因此我們將π1(含有速度項)對不同的π作圖，並求其相關係數，來得道我們預期的車速與其他參數間的關係。因為π2是車道數，不連續，因此我們只和π3、π4作圖，希望能透過運算讓不同π之間是接近線性的，以提高之後預測的準確度。π1和π3之間，代表速度與流量之間的關係，由於從理論可以知道速度與密度是線性關係，且密度與流量呈二次曲線，所以速率與流量也應呈拋物線，我們將π3開根號之後，得到與π1線性相關，且相關係數為0.86。而我們最後透過反覆嘗試，將π4倒數開根號，並發現圖形分支成許多斜率不同的直線。因此我們推論應該是由於我們所選用的對應道路性質並不是能最佳描述這個狀態的參數，不然應該會重合成一條線，但由於其中的線性關係依然成立，我們依然將其放入x-train data，並由NN依照差別進行預測。
 		<div align="center"><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/pi3-pi1.png"/><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/sqrt_pi3-pi1.png"/></div>
