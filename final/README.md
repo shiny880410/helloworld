@@ -48,8 +48,12 @@
 		<div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/files/nodes.PNG"/></div>
 	* 調整batch size
 	<br />我們由batch size=128 (Neural network final_2) 開始調整，再經過多次調整，直到模型不能再進步為止，最後得到batch size=100。[(Neural network final_1)](https://github.com/shiny880410/helloworld/blob/master/final/files/Final_NN1.ipynb)
-* 將預測的數據作圖與結論
-	<div align=center><img  width="400" height="400" src="https://github.com/shiny880410/helloworld/blob/master/final/files/predict.png"/></div>
+* 將預測的數據作圖與結論 [(結論程式碼)](https://github.com/shiny880410/helloworld/blob/master/final/files/NN_conclution.ipynb)
+	<div align=center><img  width="400" height="400" src="https://github.com/shiny880410/helloworld/blob/master/final/files/speed_occ_lan.png"/></div>
+	<div align=center><img  width="400" height="400" src="https://github.com/shiny880410/helloworld/blob/master/final/files/speed_occ_left.png"/></div>
+	<div align=center><img  width="400" height="400" src="https://github.com/shiny880410/helloworld/blob/master/final/files/speed_vol_lan.png"/></div>
+	<div align=center><img  width="400" height="400" src="https://github.com/shiny880410/helloworld/blob/master/final/files/speed_vol_left.png"/></div>
+
 
 ## 降低死亡車禍率_分析A1與A2交通事故原因並比較
 * 下載與取得資料
