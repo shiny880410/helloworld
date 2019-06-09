@@ -58,8 +58,9 @@
 		<div align="center"><img width="500" height="300" src="https://github.com/shiny880410/helloworld/blob/master/final/files/1theorem.PNG"/></div>
 	* 速度對流量作圖 (改變車道數)
 	<br />我們作圖的結果跟參考資料有些出入，但符合我們的原始資料分布型態 (見上文之原始數據作圖結果)。
-		<div align="center"><img width="400" height="400" src="https://github.com/shiny880410/helloworld/blob/master/final/files/speed_vol_lan.png"/></div>
-		<div align="center"><img width="500" height="300" src="https://github.com/shiny880410/helloworld/blob/master/final/files/3theorem.PNG"/></div>
+			<div align="center"><img width="400" height="400" src="https://github.com/shiny880410/helloworld/blob/master/final/files/speed_vol_lan.png"/></div>
+			<div align="center"><img width="500" height="300" src="https://github.com/shiny880410/helloworld/blob/master/final/files/3theorem.PNG"/></div>
+	
 	* 速度對密度作圖 (改變可左轉紅綠燈數)
 	* 速度對流量作圖 (改變可左轉紅綠燈數)
 		<div align="center"><img width="400" height="400" src="https://github.com/shiny880410/helloworld/blob/master/final/files/speed_occ_left.png"/><img width="400" height="400" src="https://github.com/shiny880410/helloworld/blob/master/final/files/speed_vol_left.png"/></div>
