@@ -55,11 +55,11 @@
 	<br />
 	<br />從圖中可以發現，同樣車道佔有率的情況下，車道數越多，車速越快，跟我們所查到的資料是一致的。且原因是由於在同樣車道佔有率(密度)的情況下，多線道的車流可以透過變換車道，達到較單一線道高的車速。(參考資料 : 高速公路多車道車流模式之研究,宋威廷,2012)
 		<div align="center"><img width="400" height="400" src="https://github.com/shiny880410/helloworld/blob/master/final/files/speed_occ_lan.png"/></div>
-		<div align="center"><img width="500" height="300" src="https://github.com/shiny880410/helloworld/blob/master/final/files/1thorem.PNG"/></div>
+		<div align="center"><img width="500" height="300" src="https://github.com/shiny880410/helloworld/blob/master/final/files/1theorem.PNG"/></div>
 	* 速度對流量作圖 (改變車道數)
 	<br />我們作圖的結果跟參考資料有些出入，但符合我們的原始資料分布型態 (見上文之原始數據作圖結果)。
 		<div align="center"><img width="400" height="400" src="https://github.com/shiny880410/helloworld/blob/master/final/files/speed_vol_lan.png"/></div>
-		<div align="center"><img width="500" height="300" src="https://github.com/shiny880410/helloworld/blob/master/final/files/3thorem.PNG"/></div>
+		<div align="center"><img width="500" height="300" src="https://github.com/shiny880410/helloworld/blob/master/final/files/3theorem.PNG"/></div>
 	* 速度對密度作圖 (改變可左轉紅綠燈數)
 	* 速度對流量作圖 (改變可左轉紅綠燈數)
 		<div align="center"><img width="400" height="400" src="https://github.com/shiny880410/helloworld/blob/master/final/files/speed_occ_left.png"/><img width="400" height="400" src="https://github.com/shiny880410/helloworld/blob/master/final/files/speed_vol_left.png"/></div>
