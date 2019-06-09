@@ -65,7 +65,7 @@
 	<br />由上圖可知，忠孝東路位居第一，市民大道位居第二，在A2交通事故中，我們以忠孝東路、市民大道與復興南北路進行分析。
 * 進行共現性分析與呈現
 	* A1交通事故
-	<br />將所關心的關鍵字詞列出來，並觀察彼此交互在文本(不同場車禍)之間出現的次數，最後將矩陣降維呈現，從圖中可以看出名詞之間的相關性。[(A1車禍事故明細分析)](https://github.com/shiny880410/helloworld/blob/master/hw4-6/PCA2.ipynb)
+	<br />將所關心的關鍵字詞列出來，並觀察彼此交互在文本(不同場車禍)之間出現的次數，最後將矩陣降維呈現，並剔除多數影響較不顯著的因素，留下影響車禍發生的主因，從圖中可以看出名詞之間的相關性。[(A1車禍事故明細分析)](https://github.com/shiny880410/helloworld/blob/master/hw4-6/PCA2.ipynb)
 	<br />從最後所畫成的圖表，我們可以發現死亡車禍確實有和許多特定的詞彙相關，而這也對應到了特定的族群、車種、環境與道路型態。而從這些訊息可以提供相關單位改善道路的方向與進行有效的宣導或臨檢。
 		* 我們可以發現以台北市而言，機車是與死亡車禍高度相關的車種之一，再進而參照文本內事發路段，可得知臺北市對外縣市交界的機車道是需要改善的重點道路之一。
 		* 50km/hr明顯相較於低時速顯著，因此推論死亡車禍在事發當時車速普遍較高，而另一方面我們也可以發現快車道較慢車道與死亡關聯性更高。
@@ -75,11 +75,11 @@
 		![image](https://github.com/shiny880410/helloworld/blob/master/hw4-6/q2.PNG)
 	* A2交通事故
 	<br />我們依照上述方法對分組過後的A2交通事故進行分析。
-	<br />**忠孝東路** [(程式碼)](https://github.com/shiny880410/helloworld/blob/master/final/files/Zhongxiao.ipynb)
+	<br />1. **忠孝東路** [(程式碼)](https://github.com/shiny880410/helloworld/blob/master/final/files/Zhongxiao.ipynb)
 		<div align=center><img width="600" height="600"  src="https://github.com/shiny880410/helloworld/blob/master/final/files/Zhongxiao.png"/></div>
-	<br />**市民大道** [(程式碼)](https://github.com/shiny880410/helloworld/blob/master/final/files/ShiMin.ipynb)
+	<br />2. **市民大道** [(程式碼)](https://github.com/shiny880410/helloworld/blob/master/final/files/ShiMin.ipynb)
 		<div align=center><img width="600" height="600"  src="https://github.com/shiny880410/helloworld/blob/master/final/files/ShiMin.png"/></div>
-	<br />**復興路** [(程式碼)](https://github.com/shiny880410/helloworld/blob/master/final/files/Fuxing.ipynb)
+	<br />3. **復興南北路** [(程式碼)](https://github.com/shiny880410/helloworld/blob/master/final/files/Fuxing.ipynb)
 		<div align=center><img width="600" height="600"  src="https://github.com/shiny880410/helloworld/blob/master/final/files/Fuxing.png"/></div>
 	<br />由結果來看，我們可以發現一些A2交通事故共同享有的特徵 :
 		* 機車
@@ -87,8 +87,10 @@
 		* 年輕族群
 		* 男性發生事故次數多於女性，
 		* 忠孝多了自小客車
-	<br />另外，忠孝東路與市民大道分別為臺北市發生事故次數前兩名的路段，除了道路較長、為重要幹道之外，我們可以藉由與同樣是重要道路的復興路相比，發現他們較復興路多了交叉路口與四岔路等較為複雜的道路型態，且他們與受傷的共現性也較單純的路段多，因此我們應重視路口安全與道路規劃。
-* A1事故與A2事故比較
+	<br />另外，忠孝東路與市民大道分別為臺北市發生事故次數前兩名的路段，除了道路較長、為重要幹道之外，我們可以藉由與同樣是重要道路的復興南北路相比，發現他們較復興南北路多了交叉路口與四岔路等較為複雜的道路型態，且他們與受傷的共現性也較單純的路段多，因此我們應重視路口安全與道路規劃。
+* A1事故與A2事故比較與結論
+	<br /> 由上述分析，我們可以發現其實發生A1、A2事故的特徵大同小異，不論是容易發生車禍的道路型態、年齡層等都十分相似，天氣的影響也十分有限，主要有些微差異的是死亡類型的車禍的主因中有快車道與行人，而受傷類型車禍則無。因此
+
 
 
 
