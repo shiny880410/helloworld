@@ -50,14 +50,16 @@
 	<br />我們由batch size=128 (Neural network final_2) 開始調整，再經過多次調整，直到模型不能再進步為止，最後得到batch size=100。[(Neural network final_1)](https://github.com/shiny880410/helloworld/blob/master/final/files/Final_NN1.ipynb)
 * 將預測的數據作圖與結論 [(結論程式碼)](https://github.com/shiny880410/helloworld/blob/master/final/files/NN_conclution.ipynb)
 	<br />在許多互相不獨立的可控制變因中，我們花許多時間討論如何選出有效的資料放入NN訓練，在將預測出的數據作圖，並給予小間隔的變因時，數字能得到一定的趨勢且是連續的，這給我們蠻大的鼓勵。因為在做hw4-6的training時，我們直接依照生活經驗放入資料而沒有多加處理，但常常覺得NN預測出來的速率是在四十到六十之間隨機分布。
+	<br />
 	* 速度對車道佔有率作圖 (改變車道數)
+	<br />
 	<br />從圖中可以發現，同樣車道佔有率的情況下，車道數越多，車速越快，跟我們所查到的資料是一致的。且原因是由於在同樣車道佔有率(密度)的情況下，多線道的車流可以透過變換車道，達到較單一線道高的車速。(參考資料 : 高速公路多車道車流模式之研究,宋威廷,2012)
 		<div align="center"><img width="400" height="400" src="https://github.com/shiny880410/helloworld/blob/master/final/files/speed_occ_lan.png"/></div>
-		<div align="center"><img width="400" height="300" src="https://github.com/shiny880410/helloworld/blob/master/final/files/1thorem.PNG"/></div>
+		<div align="center"><img width="500" height="300" src="https://github.com/shiny880410/helloworld/blob/master/final/files/1thorem.PNG"/></div>
 	* 速度對流量作圖 (改變車道數)
 	<br />我們作圖的結果跟參考資料有些出入，但符合我們的原始資料分布型態 (見上文之原始數據作圖結果)。
 		<div align="center"><img width="400" height="400" src="https://github.com/shiny880410/helloworld/blob/master/final/files/speed_vol_lan.png"/></div>
-		<div align="center"><img width="400" height="300" src="https://github.com/shiny880410/helloworld/blob/master/final/files/2thorem.PNG"/></div>
+		<div align="center"><img width="500" height="300" src="https://github.com/shiny880410/helloworld/blob/master/final/files/3thorem.PNG"/></div>
 	* 速度對密度作圖 (改變可左轉紅綠燈數)
 	* 速度對流量作圖 (改變可左轉紅綠燈數)
 		<div align="center"><img width="400" height="400" src="https://github.com/shiny880410/helloworld/blob/master/final/files/speed_occ_left.png"/><img width="400" height="400" src="https://github.com/shiny880410/helloworld/blob/master/final/files/speed_vol_left.png"/></div>
