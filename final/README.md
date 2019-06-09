@@ -81,7 +81,7 @@
 		<div align=center><img width="600" height="600"  src="https://github.com/shiny880410/helloworld/blob/master/final/files/ShiMin.png"/></div>
 	<br />3. **復興南北路** [(程式碼)](https://github.com/shiny880410/helloworld/blob/master/final/files/Fuxing.ipynb)
 		<div align=center><img width="600" height="600"  src="https://github.com/shiny880410/helloworld/blob/master/final/files/Fuxing.png"/></div>
-	<br />由結果來看，我們可以發現一些A2交通事故共同享有的特徵 :
+	由結果來看，我們可以發現一些A2交通事故共同享有的特徵 :
 			* 機車
 			* 時速高
 			* 年輕族群
