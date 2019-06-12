@@ -41,13 +41,13 @@
 		<div align="center"><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/pi3-pi1.png"/><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/sqrt_pi3-pi1.png"/></div>
 		<div align="center"><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/pi4-pi1.png"/><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/sqrt_pi4^-1-pi12.png"/></div>
 * 將資料放入Neural Network進行訓練
-	* 讓過程自動化 [(程式碼)](https://github.com/shiny880410/helloworld/blob/master/final/files/downloadcsv.ipynb)
+	* 讓存取資料自動化 [(程式碼)](https://github.com/shiny880410/helloworld/blob/master/final/files/downloadcsv.ipynb)
 	<br />由於在每次training前，都要將整理好的數據再分別存成要train的數據以及要用來預測的數據。經過上次hw4-6的training之後，我們覺得其中的過程耗時又繁瑣，當資料量大時就會容易出錯，因此我們到後期讓雲端試算表中的資料分別自動存成要訓練的csv檔與用來預測的csv檔，並在存完之後自動上傳至雲端，讓我們只需要將檔案下載至程式碼中，就可以進行training，並在結束之後將模型保存下來。
 	* 放入變換後的資料進行訓練
 	<br />我們將變換過後的 π2, π3, π4 ,π1匯入進行訓練，不斷調整節數與層數，再由模型輸出 π1 並計算誤差。(training history ，如何設計節點數)[(Neural network final_2)](https://github.com/shiny880410/helloworld/blob/master/final/files/Final_NN2.ipynb)
 		<div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/files/nodes.PNG"/></div>
 	* 調整batch size
-	<br />我們由batch size=128 (Neural network final_2) 開始調整，再經過多次調整，直到模型不能再進步為止，最後得到batch size=100。[(Neural network final_1)](https://github.com/shiny880410/helloworld/blob/master/final/files/Final_NN1.ipynb)
+	<br />我們由batch size=128 (Neural network final_2) 開始調整，再經過多次調整，直到模型不能再進步為止，最後得到batch size=100。[(Final_NN_history)](https://github.com/shiny880410/helloworld/blob/master/final/files/Final_NN_history.ipynb)
 * 將預測的數據作圖與結論 [(結論程式碼)](https://github.com/shiny880410/helloworld/blob/master/final/files/NN_conclution.ipynb)
 	<br />在許多互相不獨立的可控制變因中，我們花許多時間討論如何選出有效的資料放入NN訓練，在將預測出的數據作圖，並給予小間隔的變因時，數字能得到一定的趨勢且是連續的，這給我們蠻大的鼓勵。因為在做hw4-6的training時，我們直接依照生活經驗放入資料而沒有多加處理，但常常覺得NN預測出來的速率是在四十到六十之間隨機分布。
 	<br />
