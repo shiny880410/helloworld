@@ -19,7 +19,7 @@
 	<br />巨觀分析又分為兩個模式，單一與多階段車流模式。多階段車流模式為車流行為在自由車流與擁擠車流狀態時候，因為表現不同，所以利用多條函數關係描述不同交通狀態。我們將流量、密度及速率作圖並與理論曲線比較，如下圖 : [(程式碼)](https://github.com/shiny880410/helloworld/blob/master/final/files/%E6%95%A3%E4%BD%88%E5%9C%96.ipynb)
 		<div align=center><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/%E5%AF%86%E5%BA%A6-%E6%B5%81%E9%87%8F.png"/></div>
 		<div align=center><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/%E5%AF%86%E5%BA%A6-%E9%80%9F%E7%8E%87.png"/></div>
-		<div align=center><img  src="https://github.com/shiny880410/helloworld/blob/master/final/files/%E6%B5%81%E9%87%8F-%E5%AF%86%E5%BA%A6.png"/></div>	
+		<div align=center><img width="400" height="250" src="https://github.com/shiny880410/helloworld/blob/master/final/files/%E6%B5%81%E9%87%8F-%E5%AF%86%E5%BA%A6.png"/></div>
 		<br />由上圖可以看到我們的數據跟理論還是有蠻大的落差，因我們希望能換個角度思考。
 	* 用流體力學觀點加入**黏滯係數**與**壓力差**進行討論
 		<br />從圖中我可以發現，我們的資料和理論有差異，我們推論是因為理論是在描述比較理想的情況，例如沒有考慮路口、轉彎車、車道縮減等等實際道路上的狀況，因此我們試圖從另一個角度進行分析，以選定放入Neural Network的 X-train data 。我們需要找出主要影響車速變化的重要參數，但由於道路性質複雜難以以理論滿足，經過討論之後，我們將其想像成二維平板流進行分析，並列出下列物理量，探討其是否適用流體性質。如下圖，我們假設車流流過一條路就像以速度U，流經上下兩片不記寬度、有限長度L的平行板之間的流體，且平行板間相距D，並在單位時間流過體積V。我們假設驅動流體的壓力差ΔP是由紅綠燈造成，只是紅綠燈提供的是阻力。就像在一段路上，若紅綠燈提供壓力阻止車子前進，而車子在沒有阻礙的情況下會很自然地想往前，那車子最後前進的速度就會跟紅綠燈有關了，所以我們假設紅綠燈數為控制車流前進的壓力梯度。而流體密度則是以車道佔有率(特定時間內一小路段被車輛佔據的時間百分比)表示，因為兩者呈正比。且路口左轉之車流待轉時會減速至幾乎靜止，和邊界無滑動之流體相互對應，因此我們以黏滯係數代表紅綠燈能左轉造成的回堵程度。
